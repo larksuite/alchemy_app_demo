@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Esta ação não é permitida neste exemplo.";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "Insira o nome de usuário e a senha.";
+"Lark_Demo_EnterPassword_Placeholder" = "Senha";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "Nome de usuário";
+"Lark_Demo_FaceID_Confirmed_Toast" = "ID facial confirmado. Entrando no aplicativo em breve...";
+"Lark_Demo_FaceID_Enable_Button" = "Ativar";
+"Lark_Demo_FaceID_Enable_Text" = "Ative o ID facial para login seguro e conveniente.";
+"Lark_Demo_FaceID_Enbaled_Toast" = "ID facial ativado. Entrando no aplicativo em breve...";
+"Lark_Demo_FaceID_FailRetry_Button" = "Repetir";
+"Lark_Demo_FaceID_Fail_Toast" = "Rosto não reconhecido. Tente novamente.";
+"Lark_Demo_FaceID_Recognizing_Toast" = "Reconhecendo...";
+"Lark_Demo_FaceID_Skip_Button" = "Ignorar";
+"Lark_Demo_FaceID_UsePhone_Button" = "Usar senha";
+"Lark_Demo_ForgotPassword_Text" = "Esqueceu da senha?";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "O número de usuário ou a senha estão incorretos. Tente novamente.";
+"Lark_Demo_LogIn_Button" = "Fazer login";
+"Lark_Demo_ResetPassword_Button" = "Redefini-la agora";
+"Lark_Demo_Welcome_Title" = "Bem-vindo ao exemplo de integração nativa";

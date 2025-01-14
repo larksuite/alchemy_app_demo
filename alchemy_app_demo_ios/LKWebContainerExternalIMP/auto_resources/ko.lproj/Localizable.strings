@@ -1,0 +1,5 @@
+
+"Lark_Demo_VPN_ConnectCancel_Button" = "취소";
+"Lark_Demo_VPN_Connect_Button" = "연결";
+"Lark_Demo_VPN_Connect_Desc" = "연결하면 회사 네트워크를 사용하여 앱을 열 수 있습니다.";
+"Lark_Demo_VPN_Connect_Title" = "VPN에 연결하시겠습니까?";

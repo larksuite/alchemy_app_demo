@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+    <string name="alchemy_sample_Lark_Demo_ActionNotSupportedInDemo_Toast">This action is not supported in the sample.</string>
+    <string name="alchemy_sample_Lark_Demo_ForYou_Title">For You</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Compose_Button">Compose</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Drafts_Tab">Drafts</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Flagged_Tab">Flagged</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Inbox_Tab">Inbox</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Search_Placeholder">Search</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Sent_Tab">Sent</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Spam_Tab">Spam</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Trash_Tab">Trash</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Edit">Edit</string>
+    <string name="alchemy_sample_forward_attachment">Forward Attachment</string>
+    <string name="alchemy_sample_select_file_title">Select a file for forward message example</string>
+</resources>

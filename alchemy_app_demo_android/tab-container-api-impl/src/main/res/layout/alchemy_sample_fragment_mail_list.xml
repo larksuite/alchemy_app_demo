@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mail.MailListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alchemy_sample_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/alchemy_sample_item_mail"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createMail"
+        android:layout_margin="16dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/alchemy_sample_ic_baseline_edit"
+        android:foregroundGravity="center"
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/alchemy_sample_Lark_Demo_Mail_Edit"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>

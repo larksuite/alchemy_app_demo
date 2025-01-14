@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="alchemy_sample_title_height">58dp</dimen>
+
+
+    <dimen name="alchemy_sample_mail_radius">6dp</dimen>
+    <dimen name="alchemy_sample_mail_menu_size">38dp</dimen>
+    <dimen name="alchemy_sample_mail_menu_icon_size">20dp</dimen>
+    <dimen name="alchemy_sample_mail_title_margin">16dp</dimen>
+    <dimen name="alchemy_sample_mail_title_edittext_text_margin">12dp</dimen>
+    <dimen name="alchemy_sample_mail_drawer_width">300dp</dimen>
+    <dimen name="alchemy_sample_mail_drawer_margin">24dp</dimen>
+    <dimen name="alchemy_sample_mail_drawer_header_margin">48dp</dimen>
+    <dimen name="alchemy_sample_mail_drawer_header_title_margin">12dp</dimen>
+    <dimen name="alchemy_sample_mail_drawer_item_height">48dp</dimen>
+    <dimen name="alchemy_sample_mail_drawer_menu_icon_size">16dp</dimen>
+    <dimen name="alchemy_sample_mail_detail_margin">16dp</dimen>
+    <dimen name="alchemy_sample_mail_list_fab_size">64dp</dimen>
+    <dimen name="alchemy_sample_mail_list_fab_margin">16dp</dimen>
+    <dimen name="alchemy_sample_mail_list_fab_icon_size">32dp</dimen>
+    <dimen name="alchemy_sample_mail_list_item_avatar_size">40dp</dimen>
+    <dimen name="alchemy_sample_mail_list_item_margin">16dp</dimen>
+    <dimen name="alchemy_sample_mail_list_item_content_margin">5dp</dimen>
+
+    <dimen name="alchemy_sample_item_video_icon_margin">16dp</dimen>
+    <dimen name="alchemy_sample_item_video_text_margin">5dp</dimen>
+</resources>

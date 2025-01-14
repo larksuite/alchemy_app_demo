@@ -1,0 +1,165 @@
+PODS:
+  - LKAppLinkExternal (1.1.4):
+    - LKKABridge
+    - LKLoggerExternal
+  - LKJsApiExternal (1.0.9):
+    - LKKABridge
+    - NativeAppPublicKit
+  - LKJsApiExternalIMP (0.0.1):
+    - LKJsApiExternal (= 1.0.9)
+  - LKKABridge (1.0.9)
+  - LKKAContainer (0.1.0-alpha.0):
+    - LKJsApiExternalIMP
+    - LKLifecycleExternalIMP
+    - LKLoggerExternalIMP
+    - LKMenusExternalIMP
+    - LKMessageExternalIMP
+    - LKNativeAppExtensionExternalIMP
+    - LKNativeAppPublicKitIMP
+    - LKQRCodeExternalIMP
+    - LKShortcutExternalIMP
+    - LKTabExternalIMP
+    - LKWebContainerExternalIMP
+  - LKKACore (1.0.1)
+  - LKLifecycleExternalIMP (0.0.1):
+    - LKKACore (= 1.0.1)
+    - LKLoggerExternalIMP
+  - LKLoggerExternal (1.0.6):
+    - LKKABridge
+  - LKLoggerExternalIMP (0.0.1):
+    - LKLoggerExternal (= 1.0.6)
+  - LKMenusExternal (1.0.4):
+    - LKKABridge
+  - LKMenusExternalIMP (0.0.1):
+    - LKMenusExternal (= 1.0.4)
+    - LKMessageExternalIMP
+    - LKNativeAppPublicKitIMP
+  - LKMessageExternal (1.0.7):
+    - LKKABridge
+    - LKMenusExternal
+  - LKMessageExternalIMP (0.0.1):
+    - LKMessageExternal (= 1.0.7)
+    - LKNativeAppPublicKitIMP
+  - LKNativeAppExtension (1.0.1)
+  - LKNativeAppExtensionAbility (1.0.1)
+  - LKNativeAppExtensionExternalIMP (0.0.1):
+    - LKAppLinkExternal (= 1.1.4)
+    - LKNativeAppExtension (= 1.0.1)
+    - LKNativeAppExtensionAbility (= 1.0.1)
+    - SnapKit (= 5.0.1)
+  - LKNativeAppPublicKitIMP (0.0.1):
+    - NativeAppPublicKit (= 1.0.2)
+  - LKQRCodeExternal (1.0.6):
+    - LKKABridge
+  - LKQRCodeExternalIMP (0.0.1):
+    - LKLoggerExternalIMP
+    - LKNativeAppPublicKitIMP
+    - LKQRCodeExternal (= 1.0.6)
+  - LKShortcutExternal (1.0.5):
+    - LKKABridge
+    - LKLoggerExternal
+  - LKShortcutExternalIMP (0.0.1):
+    - LKShortcutExternal (= 1.0.5)
+  - LKTabExternal (1.0.6):
+    - LKKABridge
+  - LKTabExternalIMP (0.0.1):
+    - LKMessageExternalIMP
+    - LKTabExternal (= 1.0.6)
+    - SnapKit (= 5.0.1)
+  - LKWebContainerExternal (1.2.0)
+  - LKWebContainerExternalIMP (0.0.1):
+    - LKWebContainerExternal (= 1.2.0)
+    - SnapKit (= 5.0.1)
+  - NativeAppPublicKit (1.0.2)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - LKJsApiExternalIMP (from `./LKJsApiExternalIMP`)
+  - LKKAContainer (from `/Users/bytedance/repo/alchemy_app_demo/alchemy_app_demo_ios/alchemy/alchemy_scripts//LKKAContainer`)
+  - LKLifecycleExternalIMP (from `./LKLifecycleExternalIMP`)
+  - LKLoggerExternalIMP (from `./LKLoggerExternalIMP`)
+  - LKMenusExternalIMP (from `./LKMenusExternalIMP`)
+  - LKMessageExternalIMP (from `./LKMessageExternalIMP`)
+  - LKNativeAppExtensionExternalIMP (from `./LKNativeAppExtensionExternalIMP`)
+  - LKNativeAppPublicKitIMP (from `./LKNativeAppPublicKitIMP`)
+  - LKQRCodeExternalIMP (from `./LKQRCodeExternalIMP`)
+  - LKShortcutExternalIMP (from `./LKShortcutExternalIMP`)
+  - LKTabExternalIMP (from `./LKTabExternalIMP`)
+  - LKWebContainerExternalIMP (from `./LKWebContainerExternalIMP`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LKAppLinkExternal
+    - LKJsApiExternal
+    - LKKABridge
+    - LKKACore
+    - LKLoggerExternal
+    - LKMenusExternal
+    - LKMessageExternal
+    - LKNativeAppExtension
+    - LKNativeAppExtensionAbility
+    - LKQRCodeExternal
+    - LKShortcutExternal
+    - LKTabExternal
+    - LKWebContainerExternal
+    - NativeAppPublicKit
+    - SnapKit
+
+EXTERNAL SOURCES:
+  LKJsApiExternalIMP:
+    :path: "./LKJsApiExternalIMP"
+  LKKAContainer:
+    :path: "/Users/bytedance/repo/alchemy_app_demo/alchemy_app_demo_ios/alchemy/alchemy_scripts//LKKAContainer"
+  LKLifecycleExternalIMP:
+    :path: "./LKLifecycleExternalIMP"
+  LKLoggerExternalIMP:
+    :path: "./LKLoggerExternalIMP"
+  LKMenusExternalIMP:
+    :path: "./LKMenusExternalIMP"
+  LKMessageExternalIMP:
+    :path: "./LKMessageExternalIMP"
+  LKNativeAppExtensionExternalIMP:
+    :path: "./LKNativeAppExtensionExternalIMP"
+  LKNativeAppPublicKitIMP:
+    :path: "./LKNativeAppPublicKitIMP"
+  LKQRCodeExternalIMP:
+    :path: "./LKQRCodeExternalIMP"
+  LKShortcutExternalIMP:
+    :path: "./LKShortcutExternalIMP"
+  LKTabExternalIMP:
+    :path: "./LKTabExternalIMP"
+  LKWebContainerExternalIMP:
+    :path: "./LKWebContainerExternalIMP"
+
+SPEC CHECKSUMS:
+  LKAppLinkExternal: e2999649dcc840a752f076afb5f865234614b31c
+  LKJsApiExternal: a375b167f234bb49bb154397fb5ae31e41088a27
+  LKJsApiExternalIMP: 50688521a0ada191d183018cb527843435c57f90
+  LKKABridge: 2b90677fe28ecc52ccddc83043dbf43d599df07d
+  LKKAContainer: 101f720604cd927cc4caeced536a4d036348460c
+  LKKACore: 1e57867a55c7a47094ca0e74edfe9f5182a17cc0
+  LKLifecycleExternalIMP: d77a9bf19f6a2762ad58b717a32c5b1e30e9ca75
+  LKLoggerExternal: d49c6f0baea9ebf55f1cc812390f5f3c4eed1b06
+  LKLoggerExternalIMP: eba272e830487dd73f94e93db98974ecd3c8a1dd
+  LKMenusExternal: 48fbbca371fdb184ffd889f8a21c9bbb9cbb8c74
+  LKMenusExternalIMP: 670e51d6a4a34f93d513cc729f144a82827043eb
+  LKMessageExternal: c5e6e0d3d186b9112482f18ec01a56d6763bcec3
+  LKMessageExternalIMP: bc7a91cfd8e5c61e7699979cef8fee522fafe941
+  LKNativeAppExtension: 853030984500cc8be40e125b0bd2a33a755887cb
+  LKNativeAppExtensionAbility: 3f71e6900ea99c9b91143e4841cc5aa7f72162d8
+  LKNativeAppExtensionExternalIMP: ba11118928743b16884c8948704b1f2408d95739
+  LKNativeAppPublicKitIMP: aa8eb3034bd066a30d9d97d5c79e02bfcba52261
+  LKQRCodeExternal: 9f35b4bbb88e62e108fe7c085773c82b7fdb670b
+  LKQRCodeExternalIMP: 3d8e178f5a65a878d801f3228f7b58c9aa72edcf
+  LKShortcutExternal: ac910aa2dabb2f95779d5ebe44f25fb9ee739807
+  LKShortcutExternalIMP: 9c2f6d4f395462670af92871f75ccbb55de4ef3f
+  LKTabExternal: bde607d086d0391cdcee53ef1f01bb4df91289e9
+  LKTabExternalIMP: f16b1edcd4a8b9da063820a7697954b7e08e9dc5
+  LKWebContainerExternal: e3baaee3ed7c86bb266f9c77196f3f5bd4a2ae4e
+  LKWebContainerExternalIMP: 695b3fb1cdb8c869d1316e90520500f0f9bf19ff
+  NativeAppPublicKit: 0bfeab2ab45d350639684474c5a9a5150f481480
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: d2240b1a0bb944883c2e410e1c8fba1c5237b4ce
+
+COCOAPODS: 1.13.0

@@ -1,0 +1,11 @@
+include ':app'
+include ':tab-container-api-impl'
+include ':logger'
+include ':common'
+include ':native-app-extension-ability-impl'
+include ':native-app-extension-api-impl'
+
+include ':lifecycle-api-impl'
+include ':qrcode-api-impl'
+include ':shortcut-api-impl'
+include ':message-action-api-impl'

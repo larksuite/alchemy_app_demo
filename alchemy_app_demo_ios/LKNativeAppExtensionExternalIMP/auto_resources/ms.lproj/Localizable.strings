@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Tindakan ini tidak disokong dalam sampel.";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "Sila masukkan kedua-dua nama pengguna dan kata laluan.";
+"Lark_Demo_EnterPassword_Placeholder" = "Kata laluan";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "Nama pengguna";
+"Lark_Demo_FaceID_Confirmed_Toast" = "ID Muka disahkan. Memasuki apl sebentar lagi...";
+"Lark_Demo_FaceID_Enable_Button" = "Aktifkan";
+"Lark_Demo_FaceID_Enable_Text" = "Aktifkan ID muka untuk log masuk yang selamat dan mudah.";
+"Lark_Demo_FaceID_Enbaled_Toast" = "ID Muka diaktifkan. Memasuki apl sebentar lagi...";
+"Lark_Demo_FaceID_FailRetry_Button" = "Cuba Lagi";
+"Lark_Demo_FaceID_Fail_Toast" = "Muka tidak dikenali. Sila cuba lagi.";
+"Lark_Demo_FaceID_Recognizing_Toast" = "Mengenali...";
+"Lark_Demo_FaceID_Skip_Button" = "Langkau";
+"Lark_Demo_FaceID_UsePhone_Button" = "Guna Kata Laluan Sebaliknya";
+"Lark_Demo_ForgotPassword_Text" = "Lupa kata laluan?";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "Nama pengguna atau kata laluan tidak betul. Sila cuba lagi.";
+"Lark_Demo_LogIn_Button" = "Log Masuk";
+"Lark_Demo_ResetPassword_Button" = "Tetapkan Semula Sekarang";
+"Lark_Demo_Welcome_Title" = "Selamat datang ke Sampel Integrasi Asli";

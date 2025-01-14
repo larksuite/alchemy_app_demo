@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Это действие не поддерживается в демонстрации.";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "Необходимо ввести и имя пользователя, и пароль.";
+"Lark_Demo_EnterPassword_Placeholder" = "Пароль";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "Имя пользователя";
+"Lark_Demo_FaceID_Confirmed_Toast" = "Пройдена идентификация по Face ID. Ожидайте входа в приложение...";
+"Lark_Demo_FaceID_Enable_Button" = "Включить";
+"Lark_Demo_FaceID_Enable_Text" = "Включите Face ID для удобного и безопасного входа.";
+"Lark_Demo_FaceID_Enbaled_Toast" = "Включен Face ID. Ожидайте входа в приложение...";
+"Lark_Demo_FaceID_FailRetry_Button" = "Повторить";
+"Lark_Demo_FaceID_Fail_Toast" = "Лицо не распознано. Повторите попытку.";
+"Lark_Demo_FaceID_Recognizing_Toast" = "Распознавание...";
+"Lark_Demo_FaceID_Skip_Button" = "Пропустить";
+"Lark_Demo_FaceID_UsePhone_Button" = "Войти с помощью пароля";
+"Lark_Demo_ForgotPassword_Text" = "Забыли пароль?";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "Неверное имя пользователя или пароль. Повторите попытку.";
+"Lark_Demo_LogIn_Button" = "Войти";
+"Lark_Demo_ResetPassword_Button" = "Сбросить";
+"Lark_Demo_Welcome_Title" = "Добро пожаловать в демонстрацию интеграции собственных компонентов";

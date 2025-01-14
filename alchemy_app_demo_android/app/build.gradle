@@ -1,0 +1,58 @@
+import groovy.json.JsonSlurper
+
+apply plugin: "com.android.application"
+apply plugin: "org.jetbrains.kotlin.android"
+
+android {
+    compileSdkVersion AlchemyVersion.compileSdkVersion
+    defaultConfig {
+        applicationId "com.ss.android.lark.alchemy"
+        minSdkVersion AlchemyVersion.minSdkVersion
+        targetSdkVersion AlchemyVersion.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile rootProject.file('key/debug.jks')
+            storePassword 'larkandroid'
+            keyAlias 'larkdebugkey'
+            keyPassword 'larkandroid'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    // 简单的编译检查
+    def jsonFile = rootProject.file("alchemy/integration_config.json")
+    def jsonSlurper = new JsonSlurper()
+    def jsonData = jsonSlurper.parse(jsonFile)
+
+    jsonData.each {
+        def projectName = ":${it.integrationModuleName}"
+        implementation(project(projectName))
+    }
+    
+}

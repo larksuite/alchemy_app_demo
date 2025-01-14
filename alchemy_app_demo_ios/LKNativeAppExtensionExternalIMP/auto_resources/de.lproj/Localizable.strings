@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Diese Aktion wird für das Beispiel nicht unterstützt.";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "Bitte geben Sie sowohl den Benutzernamen als auch das Kennwort ein.";
+"Lark_Demo_EnterPassword_Placeholder" = "Kennwort";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "Benutzername";
+"Lark_Demo_FaceID_Confirmed_Toast" = "Gesichtskennung bestätigt. Die App wird in Kürze geöffnet ...";
+"Lark_Demo_FaceID_Enable_Button" = "Aktivieren";
+"Lark_Demo_FaceID_Enable_Text" = "Aktivieren Sie für die sichere und bequeme Anmeldung die Gesichtskennung.";
+"Lark_Demo_FaceID_Enbaled_Toast" = "Gesichtskennung aktiviert. Die App wird in Kürze geöffnet ...";
+"Lark_Demo_FaceID_FailRetry_Button" = "Erneut versuchen";
+"Lark_Demo_FaceID_Fail_Toast" = "Gesicht nicht erkannt. Bitte versuchen Sie es erneut.";
+"Lark_Demo_FaceID_Recognizing_Toast" = "Erkennung läuft ...";
+"Lark_Demo_FaceID_Skip_Button" = "Überspringen";
+"Lark_Demo_FaceID_UsePhone_Button" = "Stattdessen ein Kennwort verwenden";
+"Lark_Demo_ForgotPassword_Text" = "Haben Sie Ihr Kennwort vergessen?";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "Der Benutzername oder das Kennwort ist falsch. Bitte versuchen Sie es erneut.";
+"Lark_Demo_LogIn_Button" = "Anmelden";
+"Lark_Demo_ResetPassword_Button" = "Jetzt zurücksetzen";
+"Lark_Demo_Welcome_Title" = "Willkommen beim Beispiel für die native Integration";

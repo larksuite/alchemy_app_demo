@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+	<string name="alchemy_sample_Lark_Demo_ActionNotSupportedInDemo_Toast">Sample 内暂不支持此操作</string>
+	<string name="alchemy_sample_Lark_Demo_ForYou_Title">推荐</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Compose_Button">写邮件</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Drafts_Tab">草稿箱</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Flagged_Tab">已加旗标</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Inbox_Tab">收件箱</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Search_Placeholder">搜索</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Sent_Tab">已发送</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Spam_Tab">垃圾邮件</string>
+	<string name="alchemy_sample_Lark_Demo_Mail_Trash_Tab">已删除</string>
+    <string name="alchemy_sample_Lark_Demo_Mail_Edit">编辑</string>
+	<string name="alchemy_sample_forward_attachment">转发附件</string>
+    <string name="alchemy_sample_select_file_title">选取文件用于转发文件的例子</string>
+</resources>

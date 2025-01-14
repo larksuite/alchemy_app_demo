@@ -1,0 +1,32 @@
+apply plugin: "com.android.library"
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdkVersion AlchemyVersion.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion AlchemyVersion.minSdkVersion
+        targetSdkVersion AlchemyVersion.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    resourcePrefix "alchemy_sample"
+}
+
+dependencies {
+
+
+}

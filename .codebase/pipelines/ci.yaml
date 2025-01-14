@@ -1,0 +1,34 @@
+name: Code Check
+
+trigger:
+  change:
+    branches: [ master, "release/**" ]
+    types: [ create, push, update ]
+
+jobs:
+  lint:
+    name: Swiftlint
+    runs-on:
+      macos: {}
+    steps:
+      - name: Install SwiftLint
+        commands:
+            - brew install swiftlint
+            
+      - name: Run SwiftLint
+        commands:
+            - swiftlint --config alchemy_app_demo_ios/swiftlint.yml
+            
+  format:
+    name: Swiftformat
+    runs-on:
+      macos: {}
+    steps:
+      - name: Install SwiftFormat
+        commands:
+            - brew install swiftformat
+            
+      - name: Run SwiftFormat
+        commands:
+            - swiftformat --lint . --config alchemy_app_demo_ios/.swiftformat --swiftversion 5.9
+            

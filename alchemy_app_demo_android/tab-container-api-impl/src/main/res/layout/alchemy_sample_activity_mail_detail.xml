@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F0F0F0"
+    tools:context=".mail.MailDetailActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/alchemy_sample_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/alchemy_sample_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alchemy_sample_mail_detail_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintStart_toStartOf="@+id/alchemy_sample_title"
+        app:layout_constraintTop_toBottomOf="@+id/alchemy_sample_title"
+        tools:text="content" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/alchemy_sample_forward"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alchemy_sample_mail_detail_margin"
+        android:drawableLeft="@drawable/alchemy_sample_ic_baseline_attach_email"
+        android:drawablePadding="8dp"
+        android:text="@string/alchemy_sample_forward_attachment"
+        app:layout_constraintStart_toStartOf="@+id/alchemy_sample_content"
+        app:layout_constraintTop_toBottomOf="@+id/alchemy_sample_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

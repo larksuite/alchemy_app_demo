@@ -1,0 +1,44 @@
+name: Code Check
+
+on:
+  pull_request:
+    branches:
+      - master  # 可以根据你的主分支名称修改
+      - release/**
+  push:
+    branches:
+      - master  # 可以根据你的主分支名称修改
+      - release/**
+
+jobs:
+  swiftlint:
+    name: Run SwiftLint
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install SwiftLint
+        run: |
+          brew install swiftlint
+
+      - name: Run SwiftLint
+        run: |
+          swiftlint --config alchemy_app_demo_ios/swiftlint.yml
+  
+  swiftformat:
+    name: Run SwiftFormat
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install SwiftFormat
+        run: |
+          brew install swiftformat
+
+      - name: Run SwiftFormat
+        run: |
+          - swiftformat --lint . --config alchemy_app_demo_ios/.swiftformat --swiftversion 5.9

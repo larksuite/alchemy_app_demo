@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+	<string name="alchemy_sample_Lark_Demo_ActionNotSupportedInDemo_Toast">This action is not supported in the sample.</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.android.alchemy.app.extension">
+
+    <application>
+        <activity
+            android:name="com.sample.android.alchemy.app.Main2Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.sample.android.alchemy.app.login.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>
