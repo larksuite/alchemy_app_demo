@@ -16,6 +16,24 @@
  *
  */
 
-package com.sample.android.alchemy.ability.bdmap
+package com.sample.android.alchemy.tab.container.mail.lark;
 
-data class RestaurantBean(val name: String, val type: String, val distance: Int)
+import android.content.Context;
+import com.ss.android.lark.tab.ITabPageConfig;
+
+
+class KATabTitleConfig : ITabPageConfig.ITabTitleConfig {
+
+    override fun isShow(): Boolean {
+        return false
+    }
+
+    override fun getFunctionButtonList(context: Context): List<ITabPageConfig.ITabTitleConfig.IFunctionButton>? {
+        return null
+    }
+
+    override fun getClickListener(): ITabPageConfig.TabTitleClickListener? {
+        return null
+    }
+
+}

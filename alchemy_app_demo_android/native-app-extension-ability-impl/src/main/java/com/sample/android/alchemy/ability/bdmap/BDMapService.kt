@@ -1,3 +1,21 @@
+/*
+ * Copyright (c) 2025 Lark Technologies Pte. Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ *
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
 package com.sample.android.alchemy.ability.bdmap
 
 import android.content.Context
@@ -17,6 +35,11 @@ import org.json.JSONArray
 import org.json.JSONException
 import org.json.JSONObject
 
+/**
+ * BDMapService 类用于与百度地图服务进行交互，提供获取当前位置和附近餐厅信息的功能。
+ *
+ * @param context 应用的上下文对象，用于初始化百度地图相关服务。
+ */
 class BDMapService(context: Context) {
     companion object {
         const val TAG = "BDMapService"
