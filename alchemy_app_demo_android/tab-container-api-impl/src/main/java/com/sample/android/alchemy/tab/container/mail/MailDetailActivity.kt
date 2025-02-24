@@ -1,3 +1,21 @@
+/*
+ * Copyright (c) 2025 Lark Technologies Pte. Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ *
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
 package com.sample.android.alchemy.tab.container.mail
 
 import android.app.Activity
@@ -61,12 +79,20 @@ class MailDetailActivity : BaseBindingActivity<AlchemySampleActivityMailDetailBi
         }
     }
 
+    /**
+     * 使用[IMessageApi]转发选择的文件。
+     *
+     * @param data 选择的文件的 Uri。
+     */
     private fun forwardFile(data: Uri) {
         val spiManager = SpiManager.getInstance().getSpi() ?: return
+        // 通过 SpiManager 加载 IMessageApi 实例
         val messageApi = spiManager.loadClass(IMessageApi::class.java)
+        // 创建一个文件消息体，并设置文件的 Uri
         val messageBody = FileMessageBody().apply {
             uri = data
         }
+        // 调用 IMessageApi 的 forward 方法转发文件消息
         messageApi.forward(this, Message(MessageType.FILE, messageBody))
     }
 

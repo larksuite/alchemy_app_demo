@@ -1,3 +1,21 @@
+/*
+ * Copyright (c) 2025 Lark Technologies Pte. Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ *
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ */
+
 package com.sample.android.alchemy.app.login.network
 
 import com.google.gson.Gson
@@ -15,6 +33,10 @@ import okhttp3.logging.HttpLoggingInterceptor
 import okio.BufferedSource
 import java.nio.charset.Charset
 
+/**
+ * Network 单例对象，负责处理网络请求相关的操作。
+ * 提供了登录方法，以及将请求转换为网络响应的工具方法。
+ */
 object Network {
     private const val TAG = "Network"
 
@@ -26,6 +48,15 @@ object Network {
         client = OkHttpClient.Builder().build()
     }
 
+    /**
+     * 执行登录操作的挂起函数。
+     * 该函数会构建一个登录请求，发送到指定的 URL，并返回登录结果。
+     *
+     * @param username 用户的用户名。
+     * @param password 用户的密码。
+     * @param state 登录状态参数。
+     * @return 包含登录响应的网络结果对象。
+     */
     suspend fun login(
         username: String,
         password: String,
@@ -53,7 +84,7 @@ object Network {
     private suspend fun newRequest(request: Request): Response =
         withContext(Dispatchers.IO) { client.newCall(request).execute() }
 
-    private suspend inline fun <reified T> Response.toNetworkResponse(): NetworkResult<T> {
+    private inline fun <reified T> Response.toNetworkResponse(): NetworkResult<T> {
         if (!isSuccessful) {
             return NetworkResult.Failure.BizError("Request failed, code: ${code()}, message: ${message()}")
         }

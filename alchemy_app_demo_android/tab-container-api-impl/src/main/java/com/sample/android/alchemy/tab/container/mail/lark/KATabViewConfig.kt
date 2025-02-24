@@ -16,6 +16,21 @@
  *
  */
 
-package com.sample.android.alchemy.ability.bdmap
+package com.sample.android.alchemy.tab.container.mail.lark
 
-data class RestaurantBean(val name: String, val type: String, val distance: Int)
+import com.ss.android.lark.tab.ITabPageConfig
+
+class KATabViewConfig : ITabPageConfig.ITabViewConfig {
+
+    override fun getClickListener(): ITabPageConfig.TabViewClickListener {
+        return object : ITabPageConfig.TabViewClickListener {
+            override fun onSingleClick() {
+                // 单点击事件处理逻辑，当前为空
+            }
+
+            override fun onDoubleClick() {
+                // 双点击事件处理逻辑，当前为空
+            }
+        }
+    }
+}
