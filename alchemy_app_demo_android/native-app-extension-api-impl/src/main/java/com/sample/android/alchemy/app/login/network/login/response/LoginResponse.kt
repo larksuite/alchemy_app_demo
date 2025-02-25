@@ -20,6 +20,13 @@ package com.sample.android.alchemy.app.login.network.login.response
 
 import com.google.gson.annotations.SerializedName
 
+/**
+ * 登录响应数据中的步骤信息。
+ *
+ * @property code 响应码。
+ * @property message 响应消息。
+ * @property data 响应数据。
+ */
 data class LoginResponse(
     @SerializedName("code")
     val code: Int,

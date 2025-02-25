@@ -20,6 +20,12 @@ package com.sample.android.alchemy.app.login.network.login.response
 
 import com.google.gson.annotations.SerializedName
 
+/**
+ * 登录响应数据。
+ *
+ * @property nextStep 下一步的标识。
+ * @property stepInfo 登录步骤的信息。
+ */
 data class LoginResponseData(
     @SerializedName("next_step")
     val nextStep: String,

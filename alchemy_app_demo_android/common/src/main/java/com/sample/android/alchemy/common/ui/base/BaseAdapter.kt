@@ -22,6 +22,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
+/**
+ * 基础适配器。
+ */
 abstract class BaseAdapter<VH : RecyclerView.ViewHolder, T>(diffUtil: DiffUtil.ItemCallback<T>) :
     ListAdapter<T, VH>(diffUtil) {
 }

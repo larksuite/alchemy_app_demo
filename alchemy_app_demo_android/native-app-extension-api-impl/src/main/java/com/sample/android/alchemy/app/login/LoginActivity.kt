@@ -40,6 +40,12 @@ class LoginActivity :
         private const val TAG = "LoginActivity"
         private const val EXTRA_URL = "extra_url"
 
+        /**
+         * 跳转到 LoginActivity。
+         *
+         * @param context 上下文对象。
+         * @param url 用于登录的 URL。
+         */
         fun launch(context: Context, url: String?) {
             val intent = Intent(context, LoginActivity::class.java)
             intent.putExtra(EXTRA_URL, url)

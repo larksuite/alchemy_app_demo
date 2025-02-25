@@ -21,7 +21,10 @@ package com.sample.android.alchemy.tab.container.mail.lark;
 import android.content.Context;
 import com.ss.android.lark.tab.ITabPageConfig;
 
-
+/**
+ * KATabTitleConfig 类实现了 [ITabPageConfig.ITabTitleConfig] 接口，用于配置邮件标签页标题的相关信息。
+ * 在这个例子中，没有标题。
+ */
 class KATabTitleConfig : ITabPageConfig.ITabTitleConfig {
 
     override fun isShow(): Boolean {

@@ -28,13 +28,25 @@ import com.sample.android.alchemy.tab.container.mail.bean.MailBean
 import com.sample.android.alchemy.common.ui.base.BaseAdapter
 import com.sample.android.alchemy.tab.container.databinding.AlchemySampleItemMailBinding
 
+/**
+ * 邮件列表适配器。
+ */
 class MailAdapter(
     private val context: Context,
     private val onMailItemClickListener: OnMailItemClickListener
 ) :
     BaseAdapter<MailAdapter.MailViewHolder, MailBean>(MailAlwaysDiff) {
 
+    /**
+     * 邮件列表项点击监听器。
+     */
     fun interface OnMailItemClickListener {
+        /**
+         * 点击邮件列表项时调用。
+         *
+         * @param position 点击的邮件列表项的位置。
+         * @param mailItem 点击的邮件列表项的数据。
+         */
         fun onClick(position: Int, mailItem: MailBean)
     }
 
@@ -63,9 +75,17 @@ class MailAdapter(
         }
     }
 
+    /**
+     * 邮件列表项的 ViewHolder。
+     *
+     * @property binding 邮件列表项的绑定对象。
+     */
     inner class MailViewHolder(val binding: AlchemySampleItemMailBinding) :
         RecyclerView.ViewHolder(binding.root)
 
+    /**
+     * 邮件列表项的 Diff 回调。没有实际的diff逻辑，始终返回false。
+     */
     object MailAlwaysDiff : DiffUtil.ItemCallback<MailBean>() {
         override fun areItemsTheSame(oldItem: MailBean, newItem: MailBean): Boolean {
             return false

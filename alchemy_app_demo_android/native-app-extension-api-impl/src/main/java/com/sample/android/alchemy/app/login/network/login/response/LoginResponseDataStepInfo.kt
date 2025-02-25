@@ -20,4 +20,9 @@ package com.sample.android.alchemy.app.login.network.login.response
 
 import com.google.gson.annotations.SerializedName
 
+/**
+ * 登录响应数据中的步骤信息。
+ *
+ * @property landUrl 登录成功后重定向的 URL。
+ */
 data class LoginResponseDataStepInfo(@SerializedName("land_url") val landUrl: String)

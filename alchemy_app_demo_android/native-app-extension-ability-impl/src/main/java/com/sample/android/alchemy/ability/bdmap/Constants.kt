@@ -18,23 +18,73 @@
 
 package com.sample.android.alchemy.ability.bdmap
 
+/**
+ * 常量。
+ */
 object Constants {
+    /**
+     * 插件名称。
+     */
     object PluginName {
+        /**
+         * 地图插件名称。
+         */
         const val BD_MAP = "BD_MAP"
     }
+
+    /**
+     * Js API 名称。
+     */
     object JsApi {
+        /**
+         * 获取当前位置。
+         */
         const val GET_LOCATION = "GET_LOCATION"
+
+        /**
+         * 获取附近餐厅信息。
+         */
         const val GET_RESTAURANTS = "GET_RESTAURANTS"
     }
 
+    /**
+     * Json key。
+     */
     object Key {
-        const val addr = "addr"
-        const val longitude = "longitude"
-        const val latitude = "latitude"
-        const val name = "name"
-        const val type = "type"
-        const val distance = "distance"
-        const val restaurants = "restaurants"
+        /**
+         * 地址。
+         */
+        const val ADDR = "addr"
+
+        /**
+         * 经度。
+         */
+        const val LONGITUDE = "longitude"
+
+        /**
+         * 纬度。
+         */
+        const val LATITUDE = "latitude"
+
+        /**
+         * 名称。
+         */
+        const val NAME = "name"
+
+        /**
+         * 类型。
+         */
+        const val TYPE = "type"
+
+        /**
+         * 距离。
+         */
+        const val DISTANCE = "distance"
+
+        /**
+         * 餐厅列表。
+         */
+        const val RESTAURANTS = "restaurants"
 
     }
 }

@@ -25,6 +25,9 @@ import com.ss.android.lark.extension_api.INativeAppExtension
 import com.ss.android.lark.extension_api.INativeAppPageRouter
 import com.ss.android.lark.extension_api.NativeAppExtensionImpl
 
+/**
+ * 注册登录流程。
+ */
 @NativeAppExtensionImpl
 class NativeAppExtension:  INativeAppExtension, INativeAppPageRouter {
     companion object {
