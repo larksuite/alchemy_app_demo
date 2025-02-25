@@ -109,12 +109,38 @@ object Network {
     }
 
 
+    /**
+     * 网络请求结果的通用接口。
+     * 该接口定义了两种类型的网络请求结果：成功和失败。
+     *
+     * @param T 网络请求的响应类型。
+     */
     sealed interface NetworkResult<out T> {
+        /**
+         * 表示网络请求成功的结果。
+         *
+         * @param T 网络请求的响应类型。
+         * @property content 网络请求的响应内容。
+         */
         data class Success<T>(val content: T) : NetworkResult<T>
 
+        /**
+         * 表示网络请求失败的结果。
+         * 该结果包含两种类型的失败：异常和业务错误。
+         */
         sealed interface Failure : NetworkResult<Nothing> {
+            /**
+             * 表示网络请求抛出的异常。
+             *
+             * @property throwable 抛出的异常对象。
+             */
             data class Exception(val throwable: Throwable) : Failure
 
+            /**
+             * 表示网络请求返回的业务错误。
+             *
+             * @property msg 业务错误的消息。
+             */
             data class BizError(val msg: String) : Failure
         }
     }

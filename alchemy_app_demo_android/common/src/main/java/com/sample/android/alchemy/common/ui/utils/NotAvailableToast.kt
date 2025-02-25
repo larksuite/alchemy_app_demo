@@ -22,7 +22,15 @@ import android.content.Context
 import android.widget.Toast
 import com.sample.android.alchemy.common.R
 
+/**
+ * Demo 中缺失例子时的 Toast。
+ */
 object NotAvailableToast {
+    /**
+     * 显示 Demo 中缺失例子时的 Toast。
+     *
+     * @param context 上下文。
+     */
     fun show(context: Context) {
         Toast.makeText(
             context,

@@ -1,0 +1,14 @@
+comments:
+  OutdatedDocumentation:
+    active: true
+
+  UndocumentedPublicClass:
+    active: true
+    ignoreDefaultCompanionObject: true
+    searchInInnerClass: false
+
+  UndocumentedPublicFunction:
+    active: true
+
+  UndocumentedPublicProperty:
+    active: true

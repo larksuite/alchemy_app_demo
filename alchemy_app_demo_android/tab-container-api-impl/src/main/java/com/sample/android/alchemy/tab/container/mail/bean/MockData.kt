@@ -24,7 +24,13 @@ import java.util.Locale
 import kotlin.random.Random
 import com.sample.android.alchemy.tab.container.R
 
+/**
+ * 模拟邮件数据。
+ */
 object MockData {
+    /**
+     * 模拟邮件数据。
+     */
     val dataList: List<MailBean> by lazy {
         loadData()
     }

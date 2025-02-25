@@ -53,6 +53,12 @@ class LoginFragment :
         private const val KV_KEY_USER_NAME = "user_name"
         private const val KV_KEY_PASSWORD = "password"
 
+        /**
+         * 用于创建一个新的 LoginFragment 实例。
+         *
+         * @param url 用于登录的 URL。
+         * @return 一个新的 LoginFragment 实例。
+         */
         @JvmStatic
         fun newInstance(url: String): LoginFragment{
             val args = Bundle()

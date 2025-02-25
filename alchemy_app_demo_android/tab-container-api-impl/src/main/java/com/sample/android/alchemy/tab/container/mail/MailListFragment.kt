@@ -27,6 +27,9 @@ import com.sample.android.alchemy.tab.container.mail.adapter.MailAdapter
 import com.sample.android.alchemy.tab.container.mail.bean.MockData
 import com.sample.android.alchemy.common.ui.utils.NotAvailableToast
 
+/**
+ * 邮件列表页。
+ */
 class MailListFragment(private val onMailItemClickListener: MailAdapter.OnMailItemClickListener) :
     BaseBindingFragment<AlchemySampleFragmentMailListBinding>(
         AlchemySampleFragmentMailListBinding::inflate

@@ -33,6 +33,10 @@ import kotlinx.coroutines.launch
  */
 class LoginViewModel : ViewModel() {
     private val _landUrlData: MutableLiveData<String> = MutableLiveData()
+
+    /**
+     * 登录成功后需要跳转的落地页URL
+     */
     val landUrlData: LiveData<String> = _landUrlData
 
     /**
@@ -44,6 +48,10 @@ class LoginViewModel : ViewModel() {
     }
 
     private val _loginResult: MutableLiveData<NetworkResult<LoginResponse>> = MutableLiveData()
+
+    /**
+     * 登录操作的结果
+     */
     val loginResult: LiveData<NetworkResult<LoginResponse>> = _loginResult
 
     /**

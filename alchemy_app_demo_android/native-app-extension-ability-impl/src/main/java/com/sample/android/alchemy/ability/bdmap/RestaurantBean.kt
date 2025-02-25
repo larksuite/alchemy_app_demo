@@ -18,4 +18,11 @@
 
 package com.sample.android.alchemy.ability.bdmap
 
+/**
+ * 餐厅信息。
+ *
+ * @property name 餐厅名称。
+ * @property type 餐厅类型。
+ * @property distance 距离。
+ */
 data class RestaurantBean(val name: String, val type: String, val distance: Int)

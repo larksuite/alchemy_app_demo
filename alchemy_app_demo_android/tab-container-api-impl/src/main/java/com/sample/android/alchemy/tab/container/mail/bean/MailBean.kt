@@ -20,6 +20,15 @@ package com.sample.android.alchemy.tab.container.mail.bean
 
 import androidx.annotation.ColorRes
 
+/**
+ * 邮件数据。
+ *
+ * @property avatarText 头像文本。
+ * @property avatarBgColor 头像背景颜色。
+ * @property title 标题。
+ * @property content 内容。
+ * @property time 时间。
+ */
 data class MailBean(
     val avatarText: String,
     @ColorRes

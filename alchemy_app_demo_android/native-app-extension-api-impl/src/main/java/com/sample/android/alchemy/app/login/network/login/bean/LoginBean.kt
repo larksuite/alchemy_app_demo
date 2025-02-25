@@ -20,6 +20,12 @@ package com.sample.android.alchemy.app.login.network.login.bean
 
 import com.google.gson.annotations.SerializedName
 
+/**
+ * 登录请求的参数。
+ *
+ * @property username 用户的用户名。
+ * @property password 用户的密码。
+ */
 data class LoginBean(
     @SerializedName("username")
     val username: String,

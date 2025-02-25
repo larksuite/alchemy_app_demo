@@ -26,6 +26,9 @@ import com.sample.android.alchemy.tab.container.R
 import com.sample.android.alchemy.tab.container.databinding.AlchemySampleFragmentMailBinding
 import com.sample.android.alchemy.tab.container.mail.bean.MailBean
 
+/**
+ * 主页面。
+ */
 class MainFragment :
     BaseBindingFragment<AlchemySampleFragmentMailBinding>(AlchemySampleFragmentMailBinding::inflate) {
 

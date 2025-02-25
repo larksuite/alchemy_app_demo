@@ -42,7 +42,7 @@ import org.json.JSONObject
  */
 class BDMapService(context: Context) {
     companion object {
-        const val TAG = "BDMapService"
+        private const val TAG = "BDMapService"
     }
 
     private var mLocationClient: LocationClient? = null
@@ -95,11 +95,21 @@ class BDMapService(context: Context) {
             setFirstLocType(LocationClientOption.FirstLocType.SPEED_IN_FIRST_LOC)
         }
 
+    /**
+     * 获取当前位置的经纬度信息。
+     *
+     * @param callback 回调函数，用于接收当前位置的经纬度信息。
+     */
     fun getCurrentLocation(callback: (JSONObject?) -> Unit) {
         mLocationClient?.start()
         mCurrentLocationCallback = callback
     }
 
+    /**
+     * 获取附近餐厅的信息。
+     *
+     * @param callback 回调函数，用于接收附近餐厅的信息。
+     */
     fun getNearbyRestaurants(callback: (JSONObject?) -> Unit) {
         mLocationClient?.start()
         mNearbyRestaurantsCallback = callback
@@ -121,9 +131,9 @@ class BDMapService(context: Context) {
                 if (location?.locType == BDLocation.TypeGpsLocation || location?.locType == BDLocation.TypeNetWorkLocation) {
                     try {
                         val currentLocation = JSONObject().apply {
-                            put(Constants.Key.addr, location.addrStr)
-                            put(Constants.Key.longitude, location.longitude)
-                            put(Constants.Key.latitude, location.latitude)
+                            put(Constants.Key.ADDR, location.addrStr)
+                            put(Constants.Key.LONGITUDE, location.longitude)
+                            put(Constants.Key.LATITUDE, location.latitude)
                         }
                         mCurrentLatLng = LatLng(location.latitude, location.longitude)
                         mCurrentLocationCallback?.invoke(currentLocation)
@@ -170,14 +180,14 @@ class BDMapService(context: Context) {
                 val jsonArray = JSONArray().apply {
                     mRestaurants.forEach { restaurant ->
                         put(JSONObject().apply {
-                            put(Constants.Key.name, restaurant.name)
-                            put(Constants.Key.type, restaurant.type)
-                            put(Constants.Key.distance, restaurant.distance)
+                            put(Constants.Key.NAME, restaurant.name)
+                            put(Constants.Key.TYPE, restaurant.type)
+                            put(Constants.Key.DISTANCE, restaurant.distance)
                         })
                     }
                 }
                 val storeJson = JSONObject().apply {
-                    put(Constants.Key.restaurants, jsonArray)
+                    put(Constants.Key.RESTAURANTS, jsonArray)
                 }
                 mNearbyRestaurantsCallback?.invoke(storeJson)
             }

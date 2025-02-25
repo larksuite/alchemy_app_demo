@@ -20,6 +20,10 @@ package com.sample.android.alchemy.tab.container.mail.lark
 
 import com.ss.android.lark.tab.ITabPageConfig
 
+/**
+ * KATabViewConfig 类实现了 [ITabPageConfig.ITabViewConfig] 接口，用于Tab标签点击后的事件。
+ * 在这个例子中，没有配置事件。
+ */
 class KATabViewConfig : ITabPageConfig.ITabViewConfig {
 
     override fun getClickListener(): ITabPageConfig.TabViewClickListener {

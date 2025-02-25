@@ -33,6 +33,9 @@ import com.ss.android.lark.ka.message.api.model.FileMessageBody
 import com.ss.android.lark.ka.message.api.model.Message
 import com.ss.android.lark.ka.message.api.model.MessageType
 
+/**
+ * 邮件详情页。
+ */
 class MailDetailActivity : BaseBindingActivity<AlchemySampleActivityMailDetailBinding>(
     AlchemySampleActivityMailDetailBinding::inflate
 ) {
@@ -41,6 +44,13 @@ class MailDetailActivity : BaseBindingActivity<AlchemySampleActivityMailDetailBi
         private const val KEY_CONTENT = "content"
         private const val PICK_FILE_REQUEST_CODE = 1
 
+        /**
+         * 跳转到邮件详情页。
+         *
+         * @param context 上下文对象。
+         * @param title 邮件标题。
+         * @param content 邮件内容。
+         */
         @JvmStatic
         fun launch(context: Context, title: String, content: String) {
             val intent = Intent(context, MailDetailActivity::class.java).apply {

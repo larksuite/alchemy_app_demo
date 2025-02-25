@@ -25,6 +25,12 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
 
+/**
+ * 支持 ViewBinding 的 Activity 基类。
+ *
+ * @param VB 泛型参数，表示 ViewBinding 的类型。
+ * @property block 用于创建 ViewBinding 对象的函数。
+ */
 abstract class BaseBindingActivity<VB : ViewBinding>(
     val block: (LayoutInflater) -> VB
 ) : BaseActivity() {

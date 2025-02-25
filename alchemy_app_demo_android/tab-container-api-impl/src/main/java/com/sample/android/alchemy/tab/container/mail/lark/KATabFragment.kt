@@ -26,6 +26,9 @@ import androidx.fragment.app.Fragment
 import com.sample.android.alchemy.tab.container.R
 import com.sample.android.alchemy.tab.container.mail.MainFragment
 
+/**
+ * 自定义的标签页。
+ */
 class KATabFragment : Fragment() {
     companion object {
         private const val TAG = "KATabFragment"

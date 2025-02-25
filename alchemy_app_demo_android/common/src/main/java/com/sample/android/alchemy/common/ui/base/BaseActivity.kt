@@ -20,5 +20,8 @@ package com.sample.android.alchemy.common.ui.base
 
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * Activity 基类。
+ */
 abstract class BaseActivity : AppCompatActivity() {
 }
