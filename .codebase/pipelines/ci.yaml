@@ -37,6 +37,8 @@ jobs:
     name: Detekt
     image: hub.byted.org/codebase/ci_java11
     steps:
+      - uses: actions/setup-proxy
+
       - name: Install Detekt
         commands:
             - curl -sSLO https://github.com/detekt/detekt/releases/download/v1.23.8/detekt-cli-1.23.8.zip
