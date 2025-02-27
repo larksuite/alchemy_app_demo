@@ -1,9 +1,9 @@
 {
-  "hostVersion": "7.32",
-  "baselineId": "7469777223055065090",
-  "baselineVersion": "7.32.2",
+  "hostVersion": "7.18",
+  "baselineId": "7474874152436908060",
+  "baselineVersion": "7.18.4",
   "baselineCompatibleVersion": [
-    "7.32"
+    "7.18"
   ],
   "larkIntegrationVersion": "7.32.2",
   "integrationType": 1

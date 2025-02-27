@@ -42,6 +42,7 @@ class LifecycleImpl : ILifecycleApi {
      */
     override fun onStart(context: Context) {
         Log.i(TAG, "onStart")
+        ContextHolder.setContext(context)
     }
 
     /**

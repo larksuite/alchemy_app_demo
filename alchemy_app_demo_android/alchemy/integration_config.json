@@ -110,7 +110,7 @@
       {
         "artifactId": "qrcode-api",
         "groupId": "com.ss.android.lark.component",
-        "version": "1.1.0-release",
+        "version": "1.0.4-release",
         "componentType": 1
       },
       {

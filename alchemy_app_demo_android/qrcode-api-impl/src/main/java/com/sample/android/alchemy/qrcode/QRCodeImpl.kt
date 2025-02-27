@@ -19,7 +19,7 @@
 package com.sample.android.alchemy.qrcode
 
 import android.content.Context
-import android.widget.Toast
+import com.sample.android.alchemy.lifecycle.ContextHolder
 import com.ss.android.lark.core.spi.SpiManager
 import com.ss.android.lark.extension_interfaces.IApiGateway
 import com.ss.android.lark.extension_model.NativeAppPluginEvent
@@ -52,11 +52,11 @@ class QRCodeImpl : IQRCodeApi {
     /**
      * 二维码扫描拦截处理方法。
      *
-     * @param context 上下文对象，用于调用系统服务和资源。
      * @param result 二维码扫描结果。
      * @return 如果扫描结果包含 [INTERCEPT_KEY]，则返回 true 表示拦截并自行处理；否则返回 false 放行给系统处理。
      */
-    override fun interceptHandle(context: Context, result: String): Boolean {
+    override fun interceptHandle(result: String): Boolean {
+        val context = ContextHolder.getContext()
         showToast(context, "interceptHandle: $result")
         return result.contains(INTERCEPT_KEY)
     }
@@ -64,11 +64,11 @@ class QRCodeImpl : IQRCodeApi {
     /**
      * 二维码结果处理方法。
      *
-     * @param context 上下文对象，用于调用系统服务和资源。
      * @param result 二维码扫描结果。
      * @return 如果扫描结果包含 [HANDLE_KEY]，则返回 true 表示已处理；否则返回 false 表示未处理。
      */
-    override fun handle(context: Context, result: String): Boolean {
+    override fun handle(result: String): Boolean {
+        val context = ContextHolder.getContext()
         showToast(context, "handle: $result")
         // Open your activity here
         return result.contains(HANDLE_KEY)

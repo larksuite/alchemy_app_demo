@@ -29,4 +29,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
+    // 7.18 版本中，QRCode的回调中没有context入参，需要由外部提供
+    implementation(project(":lifecycle-api-impl"))
 }
