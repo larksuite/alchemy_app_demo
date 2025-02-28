@@ -18,6 +18,7 @@
 
 package com.sample.android.alchemy.lifecycle
 
+import android.app.Application
 import android.content.Context
 import java.lang.ref.WeakReference
 
@@ -25,14 +26,15 @@ import java.lang.ref.WeakReference
  * 仅供未提供Context上下文的场景使用。例如在7.18中QRCode的接口未提供Context作为入参，无法直接打开页面。
  */
 object ContextHolder {
-    private var _context: WeakReference<Context>? = null
+    private var _application: Application? = null
 
     /**
      * 初始化Context
      * @param context Context
      */
     fun setContext(context: Context) {
-        this._context = WeakReference(context)
+        // onStart 中传入的context在当前版本实际上是Application
+        this._application = context as Application
     }
 
     /**
@@ -40,7 +42,7 @@ object ContextHolder {
      * @return Context
      */
     fun getContext(): Context {
-        return requireNotNull(_context?.get()) {
+        return requireNotNull(_application) {
             "context require initialization"
         }
     }
