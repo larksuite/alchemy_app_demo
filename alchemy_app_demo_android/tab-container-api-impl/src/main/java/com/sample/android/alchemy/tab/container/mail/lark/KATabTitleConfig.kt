@@ -31,7 +31,7 @@ class KATabTitleConfig : ITabPageConfig.ITabTitleConfig {
         return false
     }
 
-    override fun getFunctionButtonList(context: Context): List<ITabPageConfig.ITabTitleConfig.IFunctionButton>? {
+    override fun getFunctionButtonList(context: Context?): List<ITabPageConfig.ITabTitleConfig.IFunctionButton>? {
         return null
     }
 
