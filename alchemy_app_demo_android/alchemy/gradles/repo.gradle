@@ -1,0 +1,5 @@
+class AlchemyRepoContainer {
+    public static final String releases = "https://artifact.bytedance.com/repository/releases"
+    public static final String volcengine = "https://artifact.bytedance.com/repository/Volcengine"
+}
+ext.AlchemyRepo = new AlchemyRepoContainer()

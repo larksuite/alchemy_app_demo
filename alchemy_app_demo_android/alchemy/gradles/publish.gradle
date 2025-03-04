@@ -1,0 +1,42 @@
+String ANDROID_LIBRARY_PLUGIN = "com.android.library"
+String JAVA_PLUGIN = "java"
+
+def applyLarkComponentPublishPlugin() {
+    apply plugin: "lark.component.publish"
+}
+
+pluginManager.withPlugin(ANDROID_LIBRARY_PLUGIN) {
+    applyLarkComponentPublishPlugin()
+}
+
+pluginManager.withPlugin(JAVA_PLUGIN) {
+    applyLarkComponentPublishPlugin()
+}
+
+// 仅供兼容
+
+/**
+ * 原生集成依赖配置
+ */
+class AlchemyComponentExtension {
+    /** 组件模块类型，默认0为开放协议实现模块、1为源码依赖AndroidLibrary、2为本地AAR依赖；其中1、2将会执行关联依赖发布 */
+    Integer componentModuleType = -1
+    /** 组件名称，需保持项目内唯一 */
+    String componentName
+    /** 本地依赖AAR文件名称 */
+    String localAarFileName
+}
+
+String EXTENSION_NAME = "alchemyComponentConfig"
+
+if (extensions.findByName(EXTENSION_NAME) == null) {
+    extensions.create(EXTENSION_NAME, AlchemyComponentExtension)
+}
+
+project.afterEvaluate {
+    AlchemyComponentExtension extension = extensions.findByName(EXTENSION_NAME)
+    // 如果还没有移除现有的配置，警告
+    if (extension != null && extension.componentModuleType != -1) {
+        print("Warning: AlchemyComponentExtension is deprecated, please remove this from $project.buildFile")
+    }
+}

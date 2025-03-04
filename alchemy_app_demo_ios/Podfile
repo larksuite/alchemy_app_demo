@@ -1,0 +1,51 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+ENV['SWIFT_VERSION'] = '5'
+source 'https://github.com/CocoaPods/Specs.git'
+
+begin
+	require_relative 'alchemy/alchemy_scripts/alchemy_engine.rb'
+rescue LoadError => e
+  puts "AlchemyPod: Podfile: error: fail to load alchemy_engine.rb : #{e.message}"
+end
+
+def local_integration_pods
+end
+
+def componentPods
+end
+
+target 'KAAlchemyClient' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  if defined?(AlchemyEngine)
+ 	  puts "AlchemyPod: Podfile: debug: ModuleManager insert_module_and_container_pods"
+    AlchemyEngine.get_module_manager().insert_module_and_container_pods(self)
+  else
+    puts "AlchemyPod: Podfile: error: ModuleManager is not defined"
+  end
+
+  componentPods
+
+  # Pods for KAAlchemyClient
+  local_integration_pods
+end
+
+pre_install do |installer|
+  if defined?(AlchemyEngine)
+ 	  puts "AlchemyPod: Podfile pre_install: debug: AlchemyEngine onPreInstall"
+    AlchemyEngine.onPreInstall(installer)
+  else
+    puts "AlchemyPod: Podfile pre_install: error: AlchemyEngine is not defined"
+  end
+end
+  
+post_install do |installer|
+  if defined?(AlchemyEngine)
+    puts "AlchemyPod: Podfile post_install: debug: AlchemyEngine onPostInstall"
+    AlchemyEngine.onPostInstall(installer)
+  else
+    puts "AlchemyPod: Podfile post_install: error: AlchemyEngine is not defined"
+  end
+end

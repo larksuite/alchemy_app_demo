@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Sample 內暫不支援此操作";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "請輸入使用者名稱和密碼";
+"Lark_Demo_EnterPassword_Placeholder" = "請輸入密碼";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "請輸入使用者名稱";
+"Lark_Demo_FaceID_Confirmed_Toast" = "人臉辨識成功，即將進入應用程式...";
+"Lark_Demo_FaceID_Enable_Button" = "開啟人臉辨識";
+"Lark_Demo_FaceID_Enable_Text" = "開啟人臉辨識，安全快速登入";
+"Lark_Demo_FaceID_Enbaled_Toast" = "已開啟人臉辨識，即將進入應用程式...";
+"Lark_Demo_FaceID_FailRetry_Button" = "立即重試";
+"Lark_Demo_FaceID_Fail_Toast" = "人臉辨識失敗，請重試";
+"Lark_Demo_FaceID_Recognizing_Toast" = "人臉辨識中...";
+"Lark_Demo_FaceID_Skip_Button" = "略過";
+"Lark_Demo_FaceID_UsePhone_Button" = "密碼登入";
+"Lark_Demo_ForgotPassword_Text" = "忘記密碼？";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "使用者名稱或密碼錯誤，請重新輸入";
+"Lark_Demo_LogIn_Button" = "立即登入";
+"Lark_Demo_ResetPassword_Button" = "點選此處以重設";
+"Lark_Demo_Welcome_Title" = "歡迎使用原生整合 Sample";

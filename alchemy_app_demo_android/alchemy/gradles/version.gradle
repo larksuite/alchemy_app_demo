@@ -1,0 +1,55 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.google.code.gson:gson:2.10.1'
+    }
+}
+
+import com.google.gson.Gson
+import com.google.gson.JsonObject
+import com.google.gson.GsonBuilder
+
+class AlchemyVersionContainer {
+    public static final String androidGradlePlugin = "4.1.0"
+    public static final String kotlinGradlePlugin = "1.5.32"
+
+    public static final int compileSdkVersion = 31
+    public static final String buildToolsVersion = "30.0.3"
+    public static final int minSdkVersion = 22
+    public static final int targetSdkVersion = 31
+
+    private String projectPath = null
+
+    AlchemyVersionContainer(String path) {
+        projectPath = path
+    }
+
+    String getLarkIntegrationVersion() {
+        String larkIntegrationVersionKey = "larkIntegrationVersion"
+        String baseConfigPath = "/alchemy/base_config.json"
+        String version = "0.0.1-rc1"
+
+        File baseConfigFile = new File(projectPath + baseConfigPath)
+        if (baseConfigFile.exists()) {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create()
+            JsonObject baseConfigJSON = gson.fromJson(new FileReader(baseConfigFile), JsonObject.class)
+            if (baseConfigJSON != null && baseConfigJSON.has(larkIntegrationVersionKey)) {
+                version = baseConfigJSON.get(larkIntegrationVersionKey).asString
+            } else {
+                println("base_config.json there is no larkIntegrationVersion field")
+            }
+        } else {
+            println("base_config.json file not found, use default")
+        }
+
+        println("larkIntegrationVersion is " + version)
+        return version
+    }
+}
+
+ext.AlchemyVersion = new AlchemyVersionContainer(rootDir.path)

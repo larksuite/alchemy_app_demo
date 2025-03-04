@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Questa azione non è supportata nel campione.";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "Immetti sia il nome utente sia la password.";
+"Lark_Demo_EnterPassword_Placeholder" = "Password";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "Nome utente";
+"Lark_Demo_FaceID_Confirmed_Toast" = "Face ID confermato. Accesso all'app in corso";
+"Lark_Demo_FaceID_Enable_Button" = "Abilita";
+"Lark_Demo_FaceID_Enable_Text" = "Abilita il Face ID per un accesso facile e sicuro.";
+"Lark_Demo_FaceID_Enbaled_Toast" = "Face ID abilitato. Accesso all'app in corso";
+"Lark_Demo_FaceID_FailRetry_Button" = "Riprova";
+"Lark_Demo_FaceID_Fail_Toast" = "Volto non riconosciuto. Riprova.";
+"Lark_Demo_FaceID_Recognizing_Toast" = "Riconoscimento in corso";
+"Lark_Demo_FaceID_Skip_Button" = "Salta";
+"Lark_Demo_FaceID_UsePhone_Button" = "Usa la password";
+"Lark_Demo_ForgotPassword_Text" = "Hai dimenticato la password?";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "Il nome utente o la password non sono corretti. Riprova.";
+"Lark_Demo_LogIn_Button" = "Accedi";
+"Lark_Demo_ResetPassword_Button" = "Ripristinala ora";
+"Lark_Demo_Welcome_Title" = "Ti diamo il benvenuto nel campione di integrazione nativa";

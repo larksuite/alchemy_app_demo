@@ -1,0 +1,13 @@
+*.iml
+.gradle
+local.properties
+.idea
+.DS_Store
+/build
+/plugin_app/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+.m2/
+alchemy/log

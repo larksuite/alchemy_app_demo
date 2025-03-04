@@ -1,0 +1,5 @@
+source 'https://gems.ruby-china.com'
+
+gem 'fastlane'
+gem 'activesupport', '< 7.0' # ruby 2.6兼容
+gem 'cocoapods', '1.13.0'

@@ -1,0 +1,42 @@
+apply plugin: "com.android.library"
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdkVersion AlchemyVersion.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion AlchemyVersion.minSdkVersion
+        targetSdkVersion AlchemyVersion.targetSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude "**/libc++_shared.so"
+    }
+
+    resourcePrefix "alchemy_sample"
+}
+
+
+dependencies {
+    implementation(project(":common"))
+    implementation("androidx.appcompat:appcompat:1.2.0")
+    implementation("com.baidu.lbsyun:BaiduMapSDK_Location:9.5.2")
+    implementation("com.baidu.lbsyun:BaiduMapSDK_Map:7.5.9")
+    implementation("com.baidu.lbsyun:BaiduMapSDK_Search:7.5.9")
+    implementation("com.baidu.lbsyun:BaiduMapSDK_Util:7.5.9")
+}
+

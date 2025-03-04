@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0"
+    android:padding="@dimen/alchemy_sample_mail_list_item_margin">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/alchemy_sample_mail_list_item_avatar_size"
+        android:layout_height="@dimen/alchemy_sample_mail_list_item_avatar_size"
+        android:gravity="center"
+        android:textColor="@color/alchemy_sample_tab_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/alchemy_sample_tab_color_orange"
+        tools:text="name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alchemy_sample_mail_list_item_margin"
+        android:layout_marginEnd="@dimen/alchemy_sample_mail_list_item_margin"
+        android:textColor="@color/alchemy_sample_tab_text_color"
+        app:layout_constraintEnd_toStartOf="@id/time"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="title" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/alchemy_sample_mail_list_item_margin"
+        android:layout_marginTop="@dimen/alchemy_sample_mail_list_item_content_margin"
+        android:layout_marginEnd="@dimen/alchemy_sample_mail_list_item_margin"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/alchemy_sample_tab_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/time"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        tools:text="content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/alchemy_sample_tab_text_color"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title"
+        tools:text="date" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

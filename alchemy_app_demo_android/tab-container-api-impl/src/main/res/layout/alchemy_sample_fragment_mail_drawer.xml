@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/design_default_color_surface"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/alchemy_sample_mail_drawer_margin"
+    android:paddingEnd="@dimen/alchemy_sample_mail_drawer_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alchemy_sample_mail_drawer_header_margin">
+
+        <FrameLayout
+            android:id="@+id/mailHeaderIconFrame"
+            android:layout_width="@dimen/alchemy_sample_mail_menu_size"
+            android:layout_height="@dimen/alchemy_sample_mail_menu_size"
+            android:background="@android:color/holo_orange_light">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/mailHeaderIcon"
+                app:srcCompat="@drawable/alchemy_sample_ic_baseline_inbox"
+                style="@style/alchemy_sample_tab_image"
+                android:layout_width="@dimen/alchemy_sample_mail_menu_icon_size"
+                android:layout_height="@dimen/alchemy_sample_mail_menu_icon_size"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/alchemy_sample_mail_menu_size"
+            android:layout_marginStart="@dimen/alchemy_sample_mail_drawer_header_title_margin"
+            android:gravity="center_vertical"
+            android:text="三方邮件"
+            style="@style/alchemy_sample_tab_text.title" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/alchemy_sample_mail_drawer_margin"
+        android:background="@color/alchemy_sample_tab_text_placeholder" />
+
+    <LinearLayout
+        android:id="@+id/inboxFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alchemy_sample_mail_drawer_item_height"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/inboxIcon"
+            style="@style/alchemy_sample_tab_image"
+            app:srcCompat="@drawable/alchemy_sample_ic_baseline_mail"
+            android:layout_width="@dimen/alchemy_sample_mail_drawer_menu_icon_size"
+            android:layout_height="@dimen/alchemy_sample_mail_drawer_menu_icon_size" />
+
+        <TextView
+            android:id="@+id/inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/alchemy_sample_tab_text.item"
+            android:text="@string/alchemy_sample_Lark_Demo_Mail_Inbox_Tab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flaggedFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alchemy_sample_mail_drawer_item_height"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/flaggedIcon"
+            style="@style/alchemy_sample_tab_image"
+            app:srcCompat="@drawable/alchemy_sample_ic_baseline_flag"
+            android:layout_width="@dimen/alchemy_sample_mail_drawer_menu_icon_size"
+            android:layout_height="@dimen/alchemy_sample_mail_drawer_menu_icon_size" />
+
+        <TextView
+            android:id="@+id/flagged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/alchemy_sample_tab_text.item"
+            android:text="@string/alchemy_sample_Lark_Demo_Mail_Flagged_Tab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/draftsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alchemy_sample_mail_drawer_item_height"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/draftsIcon"
+            style="@style/alchemy_sample_tab_image"
+            app:srcCompat="@drawable/alchemy_sample_ic_baseline_drafts"
+            android:layout_width="@dimen/alchemy_sample_mail_drawer_menu_icon_size"
+            android:layout_height="@dimen/alchemy_sample_mail_drawer_menu_icon_size" />
+
+        <TextView
+            android:id="@+id/drafts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/alchemy_sample_tab_text.item"
+            android:text="@string/alchemy_sample_Lark_Demo_Mail_Drafts_Tab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alchemy_sample_mail_drawer_item_height"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sentIcon"
+            style="@style/alchemy_sample_tab_image"
+            app:srcCompat="@drawable/alchemy_sample_ic_baseline_send"
+            android:layout_width="@dimen/alchemy_sample_mail_drawer_menu_icon_size"
+            android:layout_height="@dimen/alchemy_sample_mail_drawer_menu_icon_size" />
+
+        <TextView
+            android:id="@+id/sent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/alchemy_sample_tab_text.item"
+            android:text="@string/alchemy_sample_Lark_Demo_Mail_Sent_Tab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/trashFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alchemy_sample_mail_drawer_item_height"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            app:srcCompat="@drawable/alchemy_sample_ic_baseline_delete"
+            style="@style/alchemy_sample_tab_image"
+            android:id="@+id/trashIcon"
+            android:layout_width="@dimen/alchemy_sample_mail_drawer_menu_icon_size"
+            android:layout_height="@dimen/alchemy_sample_mail_drawer_menu_icon_size" />
+
+        <TextView
+            android:id="@+id/trash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/alchemy_sample_tab_text.item"
+            android:text="@string/alchemy_sample_Lark_Demo_Mail_Trash_Tab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/spamFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alchemy_sample_mail_drawer_item_height"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/spamIcon"
+            app:srcCompat="@drawable/alchemy_sample_ic_baseline_warning"
+            style="@style/alchemy_sample_tab_image"
+            android:layout_width="@dimen/alchemy_sample_mail_drawer_menu_icon_size"
+            android:layout_height="@dimen/alchemy_sample_mail_drawer_menu_icon_size" />
+
+        <TextView
+            android:id="@+id/spam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/alchemy_sample_tab_text.item"
+            android:text="@string/alchemy_sample_Lark_Demo_Mail_Spam_Tab" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/alchemy_sample_tab_text_placeholder" />
+
+    <LinearLayout
+        android:id="@+id/composeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alchemy_sample_mail_drawer_item_height"
+        android:gravity="center_vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/composeIcon"
+            app:srcCompat="@drawable/alchemy_sample_ic_baseline_add_circle"
+            style="@style/alchemy_sample_tab_image"
+            android:layout_width="@dimen/alchemy_sample_mail_drawer_menu_icon_size"
+            android:layout_height="@dimen/alchemy_sample_mail_drawer_menu_icon_size" />
+
+        <TextView
+            android:id="@+id/compose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/alchemy_sample_tab_text.item"
+            android:text="@string/alchemy_sample_Lark_Demo_Mail_Compose_Button" />
+    </LinearLayout>
+</LinearLayout>

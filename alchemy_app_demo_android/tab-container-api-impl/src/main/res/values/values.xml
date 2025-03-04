@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="alchemy_sample_tab_background_color">@android:color/background_light</color>
+    <color name="alchemy_sample_tab_text_color">#000000</color>
+    <color name="alchemy_sample_tab_text_placeholder">#8F959E</color>
+    <color name="alchemy_sample_tab_search_background">#EFF0F1</color>
+    <color name="alchemy_sample_tab_color_blue">#2196F3</color>
+    <color name="alchemy_sample_tab_color_red">#F44336</color>
+    <color name="alchemy_sample_tab_color_yellow">#FFEB3B</color>
+    <color name="alchemy_sample_tab_color_orange">#FF9800</color>
+    <color name="alchemy_sample_tab_color_green">#4CAF50</color>
+    <color name="alchemy_sample_tab_color_purple">#673AB7</color>
+
+    <dimen name="alchemy_sample_tab_text_body2">16sp</dimen>
+    <dimen name="alchemy_sample_tab_text_title">16sp</dimen>
+</resources>

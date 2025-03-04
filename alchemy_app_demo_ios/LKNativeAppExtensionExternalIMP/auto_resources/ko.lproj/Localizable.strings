@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "이 작업은 샘플에서 지원되지 않습니다.";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "사용자 이름과 비밀번호를 모두 입력하세요.";
+"Lark_Demo_EnterPassword_Placeholder" = "비밀번호";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "사용자 이름";
+"Lark_Demo_FaceID_Confirmed_Toast" = "얼굴 인증이 확인되었습니다. 곧 앱으로 이동합니다...";
+"Lark_Demo_FaceID_Enable_Button" = "활성화";
+"Lark_Demo_FaceID_Enable_Text" = "더 안전하고 편리한 로그인을 위해 얼굴 인증을 활성화하세요.";
+"Lark_Demo_FaceID_Enbaled_Toast" = "얼굴 인증이 활성화되었습니다. 곧 앱으로 이동합니다...";
+"Lark_Demo_FaceID_FailRetry_Button" = "다시 시도";
+"Lark_Demo_FaceID_Fail_Toast" = "얼굴이 인식되지 않았습니다. 다시 시도하세요.";
+"Lark_Demo_FaceID_Recognizing_Toast" = "인식 중...";
+"Lark_Demo_FaceID_Skip_Button" = "건너뛰기";
+"Lark_Demo_FaceID_UsePhone_Button" = "대신 비밀번호 사용";
+"Lark_Demo_ForgotPassword_Text" = "비밀번호를 잊으셨습니까?";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "사용자 이름 또는 비밀번호가 정확하지 않습니다. 다시 시도하세요.";
+"Lark_Demo_LogIn_Button" = "로그인";
+"Lark_Demo_ResetPassword_Button" = "지금 재설정";
+"Lark_Demo_Welcome_Title" = "네이티브 통합 샘플 시작";

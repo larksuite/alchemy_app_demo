@@ -1,0 +1,47 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    apply from: rootProject.file('alchemy/gradles/repo.gradle')
+    apply from: rootProject.file('alchemy/gradles/version.gradle')
+
+    repositories {
+        maven {
+            url AlchemyRepo.releases
+        }
+        maven {
+            url AlchemyRepo.volcengine
+        }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.ss.android.lark:lark-component-integration-plugin:' + AlchemyVersion.getLarkIntegrationVersion()
+        classpath 'com.android.tools.build:gradle:' + AlchemyVersion.androidGradlePlugin
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:' + AlchemyVersion.kotlinGradlePlugin
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.32'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url AlchemyRepo.releases
+        }
+        maven {
+            url AlchemyRepo.volcengine
+        }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply from: rootProject.file('alchemy/gradles/publish.gradle')
+}
+apply plugin: "lark.component.integration"
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

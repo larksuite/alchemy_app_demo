@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Sample 内暂不支持此操作";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "请输入用户名和密码";
+"Lark_Demo_EnterPassword_Placeholder" = "请输入密码";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "请输入用户名";
+"Lark_Demo_FaceID_Confirmed_Toast" = "人脸识别成功，即将进入应用...";
+"Lark_Demo_FaceID_Enable_Button" = "开启人脸识别";
+"Lark_Demo_FaceID_Enable_Text" = "开启人脸识别，安全快捷登录";
+"Lark_Demo_FaceID_Enbaled_Toast" = "已开启人脸识别，即将进入应用...";
+"Lark_Demo_FaceID_FailRetry_Button" = "立即重试";
+"Lark_Demo_FaceID_Fail_Toast" = "人脸识别失败，请重试";
+"Lark_Demo_FaceID_Recognizing_Toast" = "人脸识别中...";
+"Lark_Demo_FaceID_Skip_Button" = "跳过";
+"Lark_Demo_FaceID_UsePhone_Button" = "密码登录";
+"Lark_Demo_ForgotPassword_Text" = "忘记密码？";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "用户名或密码错误，请重新输入";
+"Lark_Demo_LogIn_Button" = "立即登录";
+"Lark_Demo_ResetPassword_Button" = "点此重置";
+"Lark_Demo_Welcome_Title" = "欢迎使用原生集成 Sample";

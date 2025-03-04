@@ -1,0 +1,19 @@
+
+"Lark_Demo_ActionNotSupportedInDemo_Toast" = "Sample では、この操作はサポートされていません。";
+"Lark_Demo_EmptyNumberOrPassword_Toast" = "ユーザー名とパスワードの両方を入力してください。";
+"Lark_Demo_EnterPassword_Placeholder" = "パスワード";
+"Lark_Demo_EnterPhoneNumber_Placeholder" = "ユーザー名";
+"Lark_Demo_FaceID_Confirmed_Toast" = "認証しました。アプリを起動します...";
+"Lark_Demo_FaceID_Enable_Button" = "有効にする";
+"Lark_Demo_FaceID_Enable_Text" = "安全かつ便利なログインのために、顔認証を有効にしてください。";
+"Lark_Demo_FaceID_Enbaled_Toast" = "顔認証が有効になりました。アプリを起動します...";
+"Lark_Demo_FaceID_FailRetry_Button" = "再試行";
+"Lark_Demo_FaceID_Fail_Toast" = "顔を認識できませんでした。再試行してください。";
+"Lark_Demo_FaceID_Recognizing_Toast" = "認識中...";
+"Lark_Demo_FaceID_Skip_Button" = "スキップ";
+"Lark_Demo_FaceID_UsePhone_Button" = "パスワードでログイン";
+"Lark_Demo_ForgotPassword_Text" = "パスワードをお忘れですか？";
+"Lark_Demo_IncorrectNumberOrPassword_Toast" = "ユーザー名またはパスワードが正しくありません。再試行してください。";
+"Lark_Demo_LogIn_Button" = "ログイン";
+"Lark_Demo_ResetPassword_Button" = "今すぐリセット";
+"Lark_Demo_Welcome_Title" = "Sample を使ってみましょう";

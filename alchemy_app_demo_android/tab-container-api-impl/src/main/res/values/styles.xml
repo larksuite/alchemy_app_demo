@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="alchemy_sample_tab_text">
+        <item name="android:textColor">@color/alchemy_sample_tab_text_color</item>
+    </style>
+
+    <style name="alchemy_sample_tab_text.item">
+        <item name="android:layout_marginLeft">@dimen/alchemy_sample_mail_drawer_header_title_margin</item>
+        <item name="android:textSize">@dimen/alchemy_sample_tab_text_body2</item>
+    </style>
+
+    <style name="alchemy_sample_tab_text.title">
+        <item name="android:textSize">@dimen/alchemy_sample_tab_text_title</item>
+    </style>
+
+    <style name="alchemy_sample_tab_image">
+        <item name="android:tint">@color/alchemy_sample_tab_text_placeholder</item>
+    </style>
+</resources>

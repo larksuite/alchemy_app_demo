@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources>
+	<string name="alchemy_sample_Lark_Demo_ActionNotSupportedInDemo_Toast">This action is not supported in the sample.</string>
+	<string name="alchemy_sample_Lark_Demo_EmptyNumberOrPassword_Toast">Please enter both the username and the password.</string>
+	<string name="alchemy_sample_Lark_Demo_EnterPassword_Placeholder">Password</string>
+	<string name="alchemy_sample_Lark_Demo_EnterPhoneNumber_Placeholder">Username</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_Confirmed_Toast">Face ID confirmed. Entering the app shortly...</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_Enable_Button">Enable</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_Enable_Text">Enable face ID for secure and convenient login.</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_Enbaled_Toast">Face ID enabled. Entering the app shortly...</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_FailRetry_Button">Retry</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_Fail_Toast">Face not recognized. Please try again.</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_Recognizing_Toast">Recognizing...</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_Skip_Button">Skip</string>
+	<string name="alchemy_sample_Lark_Demo_FaceID_UsePhone_Button">Use Password Instead</string>
+	<string name="alchemy_sample_Lark_Demo_ForgotPassword_Text">Forgot password?</string>
+	<string name="alchemy_sample_Lark_Demo_IncorrectNumberOrPassword_Toast">The username or password is incorrect. Please try again.</string>
+	<string name="alchemy_sample_Lark_Demo_LogIn_Button">Log In</string>
+	<string name="alchemy_sample_Lark_Demo_LogIn_Button_Loading">Loading</string>
+	<string name="alchemy_sample_Lark_Demo_ResetPassword_Button">Reset It Now</string>
+	<string name="alchemy_sample_Lark_Demo_Welcome_Title">Welcome to the Native Integration Sample</string>
+    <string name="alchemy_sample_no_login_url_provided">No login url provided</string>
+</resources>

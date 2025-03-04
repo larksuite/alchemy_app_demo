@@ -1,0 +1,27 @@
+opt_in_rules:
+  - missing_docs
+
+disabled_rules:
+  - blanket_disable_command
+  - trailing_whitespace
+
+line_length:
+  warning: 200
+  
+function_body_length:
+  warning: 80
+  error: 100
+  
+identifier_name:
+  min_length: 1
+  
+excluded:
+  - Pods
+  - .alchemy_bundle_2.4.22
+  
+missing_docs:
+  excludes_extensions: false
+  excludes_inherited_types: false
+  excludes_trivial_init: true
+  error:
+   - public
