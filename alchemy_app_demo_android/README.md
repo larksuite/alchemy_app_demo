@@ -8,3 +8,14 @@
 | [qrcode-api-impl](qrcode-api-impl) | 监听扫码的回调。 | `qrcode-api` | `native-app-extension-ability`, `core-component-api` |
 | [shortcut-api-impl](shortcut-api-impl) | 自定义桌面快捷方式。例如打开日历和任务。 | `shortcut-api` | N/A |
 | [tab-container-api-impl](tab-container-api-impl) | 自定义Tab容器。在点击进入邮件详情页后可以转发文件到消息。 | `tab-container-api` | `message-api`, `core-component-api` |
+
+| Module | Description | Protocols | Capabilities |
+| -- | -- | -- | -- |
+| [lifecycle-api-impl](lifecycle-api-impl) | Monitors lifecycle and login state changes. | `lifecycle-api` | N/A |
+| [logger](logger) | Wraps Feishu's logging capabilities. | N/A | `logger-api`, `core-component-api` |
+| [message-action-api-impl](message-action-api-impl) | Adds "Download" menu item to file-type messages. | `message-action-api` | `message-api`, `core-component-api` |
+| [native-app-extension-ability-impl](native-app-extension-ability-impl) | Provides map-related capabilities for JSBridge. | `native-app-extension-ability` | N/A |
+| [native-app-extension-api-impl](native-app-extension-api-impl) | Custom login page implementation. | `native-app-extension-api` | `kv-api`, `core-component-api`, `applink-api` |
+| [qrcode-api-impl](qrcode-api-impl) | Handles QR code scanning callbacks. | `qrcode-api` | `native-app-extension-ability`, `core-component-api` |
+| [shortcut-api-impl](shortcut-api-impl) | Custom desktop shortcuts (e.g. open calendar and tasks). | `shortcut-api` | N/A |
+| [tab-container-api-impl](tab-container-api-impl) | Custom tab container with file forwarding capability from email details. | `tab-container-api` | `message-api`, `core-component-api` |
