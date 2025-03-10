@@ -14,16 +14,22 @@
  * limitations under the License.
  */
 
-import NativeAppPublicKit
+#import <LKNativeAppOpenApiExternalIMP/LKNativeAppOpenApiExternalIMP-Swift.h>
+#import "ka_auto_generated.h"
 
-/// A class which provides a singleton to invoke the `NativeAppManagerProtocol` ability
-public class LKNativeAppPublicKitTemplate: NSObject {
-    static let manager = NativeAppConnectManager.shared.getNativeAppManager()
+@import Foundation;
 
-    /// Invoke the `showToast` open api
-    public static func showToast(_ content: String) {
-        manager?.invokeOpenApi(appID: "YOUR_APP_ID", apiName: "showToast", params: ["title": content]) { _ in
-            /* handle result*/
-        }
-    }
+@interface KAOpenApiRegistry: NSObject
+
+@end
+
+@implementation KAOpenApiRegistry
+
++ (void)load {
+    NSString * channel = [NSString stringWithUTF8String:getChannel()];
+    [LKNativeAppPublicKitTemplate swiftLoadWithChannel:channel];
 }
+
+@end
+
+

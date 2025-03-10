@@ -18,6 +18,7 @@
 #import "LKJsApiLocationManager.h"
 #import <MapKit/MapKit.h>
 #import "LKKABridge/KAAPI.h"
+#import "ka_auto_generated.h"
 
 /// An implementation of protocol `KANativeAppPluginDelegate`
 @implementation JsApiImplRestaurants
@@ -57,9 +58,10 @@
 /// Registry method
 + (void)ocLoadWithChannel:(NSString *)channel {
     KAAPI *api = [[KAAPI alloc] initWithChannel:channel];
-    [api registerWithNativeAppPluginDelegate:^id<KANativeAppPluginDelegate>{
-        return [[JsApiImplRestaurants alloc] init];
-    } cache:YES];
+    
+    [KAAPI_REGISTER registerWithNativeAppPluginDelegate:^id<KANativeAppPluginDelegate> {
+            return [[JsApiImplRestaurants alloc] init];
+        } cache:YES];
 }
 
 @end
