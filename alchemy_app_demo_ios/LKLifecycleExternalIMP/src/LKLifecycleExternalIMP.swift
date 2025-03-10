@@ -15,33 +15,41 @@
  */
 
 import Foundation
+import LKKABridge
 import LKKACore
+import LKLifecycleExternal
 import LKLoggerExternalIMP
 import UIKit
 
 /// Implements callback functions in lifecycle
-public class LKLifecycleTest {
+public class LKLifecycleTest: KALifecycleProtocol {
     private static let tag = "AlchemyAppLifecycle"
 
     static func log(_ msg: String) {
         LKLoggerExternalTemplate.shared?.log(tag: tag, msg)
     }
 
-    func start() {}
+    /// Executes on start
+    public func start() {}
 
-    func resume() {}
+    /// Executes on resume
+    public func resume() {}
 
-    func pause() {}
+    /// Executes on pause
+    public func pause() {}
 
-    func onLoginSuccess() {
+    /// Executes on finishing login
+    public func onLoginSuccess() {
         Self.log("User login success")
     }
 
-    func onLoginFail() {
+    /// Executes on login failure
+    public func onLoginFail() {
         Self.log("User login fail")
     }
 
-    func onLogout() {
+    /// Executes on logging out
+    public func onLogout() {
         Self.log("User log out")
     }
 }
@@ -49,42 +57,9 @@ public class LKLifecycleTest {
 /// Registry class
 @objcMembers
 public class LKLifecycleExternalTemplate: NSObject {
-    static let shared = LKLifecycleExternalTemplate()
-    fileprivate let imp = LKLifecycleIMP()
-
     /// Initializes `LKLifecycleIMP` on loading Object-C classes
-    public class func swiftLoad() {
-        _ = shared
-    }
-}
-
-/// Registers the lifecycle observer functions on initialization
-public class LKLifecycleIMP {
-    private let lifecycle: LKLifecycleTest = .init()
-
-    init() {
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name(LKLifecycle.start), object: nil, queue: nil) { _ in
-            self.lifecycle.start()
-        }
-
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name(LKLifecycle.resume), object: nil, queue: nil) { _ in
-            self.lifecycle.resume()
-        }
-
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name(LKLifecycle.pause), object: nil, queue: nil) { _ in
-            self.lifecycle.pause()
-        }
-
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name(LKLifecycle.onLoginSuccess), object: nil, queue: nil) { _ in
-            self.lifecycle.onLoginSuccess()
-        }
-
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name(LKLifecycle.onLoginFail), object: nil, queue: nil) { _ in
-            self.lifecycle.onLoginFail()
-        }
-
-        _ = NotificationCenter.default.addObserver(forName: NSNotification.Name(LKLifecycle.onLogout), object: nil, queue: nil) { _ in
-            self.lifecycle.onLogout()
-        }
+    public class func swiftLoad(channel: String) {
+        let api = KAAPI(channel: channel)
+        api.register(lifecycle: LKLifecycleTest.init, cache: true)
     }
 }

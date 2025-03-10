@@ -16,7 +16,7 @@
 
 import LKKABridge
 import LKLoggerExternalIMP
-import LKNativeAppPublicKitIMP
+import LKNativeAppOpenApiExternalIMP
 import LKQRCodeExternal
 
 class LKQRCode: KAQRCodeApiDelegate {
@@ -32,7 +32,7 @@ class LKQRCode: KAQRCodeApiDelegate {
 
     func handle(result: String) -> Bool {
         Self.log("handle result")
-        LKNativeAppPublicKitTemplate.showToast(result)
+        LKNativeAppPublicKitTemplate.shared?.showToast(result)
         return false
     }
 }

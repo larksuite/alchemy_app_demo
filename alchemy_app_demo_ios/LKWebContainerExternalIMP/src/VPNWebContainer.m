@@ -17,6 +17,8 @@
 #import <Foundation/Foundation.h>
 #import <LKWebContainerExternalIMP/LKWebContainerExternalIMP-Swift.h>
 #import <LKWebContainerExternal/LKWebContainerExternal-Swift.h>
+#import "ka_auto_generated.h"
+#import "LKKABridge/KAAPI.h"
 
 @interface VPNWebContainerLoader: NSObject
 
@@ -25,7 +27,9 @@
 @implementation VPNWebContainerLoader
 
 +(void)load {
-    KAWebContainerExternal.shared.container = [[VPNWebContainer alloc] init];
+    [KAAPI_REGISTER registerWithWebContainer:^id<KAWebContainerProtocol> {
+            return [[VPNWebContainer alloc] init];
+        } cache:YES];
 }
 
 @end
