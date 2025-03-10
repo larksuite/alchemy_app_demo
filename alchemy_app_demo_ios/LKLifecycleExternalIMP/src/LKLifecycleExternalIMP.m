@@ -16,6 +16,7 @@
 
 @import LKKACore;
 #import "LKLifecycleExternalIMP/LKLifecycleExternalIMP-Swift.h"
+#import "ka_auto_generated.h"
 
 @interface KACoreRegistry: NSObject
 
@@ -24,7 +25,8 @@
 @implementation KACoreRegistry
 
 +(void)load {
-    [LKLifecycleExternalTemplate swiftLoad];
+    NSString * channel = [NSString stringWithUTF8String:getChannel()];
+    [LKLifecycleExternalTemplate swiftLoadWithChannel: channel];
 }
 
 @end
