@@ -66,8 +66,8 @@ This module shows how to log message via the protocol `KALoggerProtocol` in `LKL
 
 This module shows how to download or forward file via the protocol `KAMessageNavigator` in `LKMessageExternal`.
 
-### Native App Open Api | LKNativeAppPublicKitIMP | 客户端OpenAPI能力
-[source code](LKNativeAppPublicKitIMP)
+### Native App Open Api | LKNativeAppOpenApiExternalIMP | 客户端OpenAPI能力
+[source code](alchemy_app_demo_ios/LKNativeAppOpenApiExternalIMP)
 
 This module provides an example of invoking the open API `showToast` via the protocol `NativeAppManagerProtocol` in `NativeAppPublicKit`.
 
