@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.swift_version = '5.0'
   
   spec.dependency 'LKMessageExternalIMP'
-  spec.dependency 'LKNativeAppPublicKitIMP'
+  spec.dependency 'LKNativeAppOpenApiExternalIMP'
   
   puts "AlchemyEngine: ModulePod: Check isLocalIntegrationMode #{spec.name}: #{isLocalIntegrationMode.to_s}"
 

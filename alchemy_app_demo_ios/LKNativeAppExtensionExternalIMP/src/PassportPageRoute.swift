@@ -15,19 +15,25 @@
  */
 
 import Foundation
-import LKNativeAppExtension
-import LKNativeAppExtensionAbility
+import LKKABridge
+import LKNativeAppExtensionExternal
 
 /// An implementation of protocol `LKNativeAppExtension` and `LKNativeAppExtensionPageRoute`
-@objc(PassportPageRoute)
-public class PassportPageRoute: LKNativeAppExtension, LKNativeAppExtensionPageRoute {
+public class PassportPageRoute: NSObject, KANativeAppExtensionProtocol {
     /// The channel id
     public static var channel: String?
 
+    /// Returns your app login token (usually an app_id)
+    public func appId() -> String {
+        "YOUR_APP_LOGIN_TOKEN"
+    }
+
     /// Initializes the channel id on loading Object-C classes
     @objc
-    public static func initChannel(channel: String) {
+    public static func swiftLoad(channel: String) {
         Self.channel = channel
+        let api = KAAPI(channel: channel)
+        api.register(nativeApp: PassportPageRoute.init, cache: true)
     }
 
     /// Page route to the custom login ViewController

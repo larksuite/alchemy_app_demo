@@ -14,11 +14,10 @@
  * limitations under the License.
  */
 
-@import LKNativeAppExtension;
+@import LKNativeAppExtensionExternal;
 #import "LKNativeAppExtensionExternalIMP/LKNativeAppExtensionExternalIMP-Swift.h"
 #import "ka_auto_generated.h"
 
-@LKNativeAppExtension(PassportPageRoute, YOUR_APP_LOGIN_TOKEN, false)
 @interface ChannelRegistry : NSObject
 @end
 
@@ -26,7 +25,7 @@
 
 +(void)load {
     NSString * channel = [NSString stringWithUTF8String:getChannel()];
-    [PassportPageRoute initChannelWithChannel: channel];
+    [PassportPageRoute swiftLoadWithChannel: channel];
 }
    
 @end

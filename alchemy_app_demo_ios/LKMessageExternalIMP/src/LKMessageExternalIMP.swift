@@ -16,7 +16,7 @@
 
 import LKKABridge
 import LKMessageExternal
-import LKNativeAppPublicKitIMP
+import LKNativeAppOpenApiExternalIMP
 
 /// A class which provides a singleton to invoke the `KAMessageNavigator` ability
 @objcMembers
@@ -49,22 +49,22 @@ public class LKMessageExternalTemplate: NSObject {
                 info.name
             }
 
-            let suc = { (_: String) in
-                LKNativeAppPublicKitTemplate.showToast("download succeeds")
+            let suc: (String) -> Void = { (_: String) in
+                LKNativeAppPublicKitTemplate.shared?.showToast("download succeeds")
             }
 
-            let err = { (_: Error) in
-                LKNativeAppPublicKitTemplate.showToast("download fails")
+            let err: (Error) -> Void = { (_: Error) in
+                LKNativeAppPublicKitTemplate.shared?.showToast("download fails")
             }
             if info.isEmpty {
-                LKNativeAppPublicKitTemplate.showToast("no available resource")
+                LKNativeAppPublicKitTemplate.shared?.showToast("no available resource")
             } else {
                 navigator?.downloadResource(messageInfo: info[0], onSuccess: suc, onError: err)
             }
         }
 
         func onError(error _: Error) {
-            LKNativeAppPublicKitTemplate.showToast("get resource fails")
+            LKNativeAppPublicKitTemplate.shared?.showToast("get resource fails")
         }
 
         navigator?.getResources(messages: messages, onSuccess: onSuccess, onError: onError)

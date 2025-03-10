@@ -3,7 +3,7 @@ require 'json'
 isLocalIntegrationMode = ENV['is_local_integration_mode'].nil?? false : ENV['is_local_integration_mode']
 
 Pod::Spec.new do |spec|
-  spec.name         = 'LKNativeAppPublicKitIMP'
+  spec.name         = 'LKNativeAppOpenApiExternalIMP'
   spec.version      = "0.0.1"
   spec.summary      = "pod for local build."
   spec.homepage     = "https://github.com/larksuite/alchemy_app_demo"
