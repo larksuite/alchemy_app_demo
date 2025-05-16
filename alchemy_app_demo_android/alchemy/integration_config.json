@@ -3,23 +3,22 @@
     "integrationModuleName": "tab-container-api-impl",
     "dependencies": [
       {
+        "componentType": 1,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "tab-container-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "2.0.4-release",
-        "templateUrl": "https://sf3-cn.feishucdn.com/obj/feishu-static/alchemy_template/project/android/2.6.2/1719937882-tab-container-api-impl.zip",
-        "componentType": 1
+        "version": "2.0.4-release"
       },
       {
+        "componentType": 2,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "core-component-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "2.0.0-release",
-        "componentType": 2
+        "version": "2.0.0-release"
       },
       {
-        "artifactId": "message-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "1.1.4-release",
-        "componentType": 2
+        "artifactId": "message-api",
+        "version": "1.1.4-release"
       }
     ]
   },
@@ -27,16 +26,16 @@
     "integrationModuleName": "logger",
     "dependencies": [
       {
-        "artifactId": "core-component-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "2.0.0-release",
-        "componentType": 2
+        "artifactId": "core-component-api",
+        "version": "2.0.0-release"
       },
       {
-        "artifactId": "logger-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "1.0.0-release",
-        "componentType": 2
+        "artifactId": "logger-api",
+        "version": "1.0.0-release"
       }
     ]
   },
@@ -44,17 +43,16 @@
     "integrationModuleName": "native-app-extension-ability-impl",
     "dependencies": [
       {
-        "artifactId": "native-app-extension-ability",
+        "componentType": 1,
         "groupId": "com.ss.android.lark.component",
-        "version": "2.0.3-release",
-        "templateUrl": "https://sf3-cn.feishucdn.com/obj/feishu-static/alchemy_template/project/android/2.6.2/1719937880-app-extension-ability-impl.zip",
-        "componentType": 1
+        "artifactId": "native-app-extension-ability",
+        "version": "2.0.3-release"
       },
       {
-        "artifactId": "core-component-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "2.0.0-release",
-        "componentType": 2
+        "artifactId": "core-component-api",
+        "version": "2.0.0-release"
       }
     ]
   },
@@ -62,28 +60,28 @@
     "integrationModuleName": "native-app-extension-api-impl",
     "dependencies": [
       {
+        "componentType": 2,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "core-component-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "2.0.0-release",
-        "componentType": 2
+        "version": "2.0.0-release"
       },
       {
+        "componentType": 2,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "applink-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "1.0.0-release",
-        "componentType": 2
+        "version": "1.0.0-release"
       },
       {
+        "componentType": 1,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "native-app-extension-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "2.0.3-release",
-        "componentType": 1
+        "version": "2.0.3-release"
       },
       {
-        "artifactId": "kv-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "1.0.4-release",
-        "componentType": 2
+        "artifactId": "kv-api",
+        "version": "1.0.4-release"
       }
     ]
   },
@@ -91,16 +89,16 @@
     "integrationModuleName": ":lifecycle-api-impl",
     "dependencies": [
       {
-        "artifactId": "lifecycle-api",
+        "componentType": 1,
         "groupId": "com.ss.android.lark.component",
-        "version": "1.0.0-release",
-        "componentType": 1
+        "artifactId": "lifecycle-api",
+        "version": "1.0.0-release"
       },
       {
-        "artifactId": "core-component-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "2.0.0-release",
-        "componentType": 2
+        "artifactId": "core-component-api",
+        "version": "2.0.0-release"
       }
     ]
   },
@@ -108,22 +106,22 @@
     "integrationModuleName": ":qrcode-api-impl",
     "dependencies": [
       {
+        "componentType": 1,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "qrcode-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "1.1.0-release",
-        "componentType": 1
+        "version": "1.1.0-release"
       },
       {
+        "componentType": 1,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "native-app-extension-ability",
-        "groupId": "com.ss.android.lark.component",
-        "version": "2.0.3-release",
-        "componentType": 1
+        "version": "2.0.3-release"
       },
       {
-        "artifactId": "core-component-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "2.0.0-release",
-        "componentType": 2
+        "artifactId": "core-component-api",
+        "version": "2.0.0-release"
       }
     ]
   },
@@ -131,10 +129,10 @@
     "integrationModuleName": ":shortcut-api-impl",
     "dependencies": [
       {
-        "artifactId": "shortcut-api",
+        "componentType": 1,
         "groupId": "com.ss.android.lark.component",
-        "version": "1.0.4-release",
-        "componentType": 1
+        "artifactId": "shortcut-api",
+        "version": "1.0.4-release"
       }
     ]
   },
@@ -142,22 +140,22 @@
     "integrationModuleName": ":message-action-api-impl",
     "dependencies": [
       {
+        "componentType": 1,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "message-action-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "1.0.3-release",
-        "componentType": 1
+        "version": "1.0.3-release"
       },
       {
+        "componentType": 2,
+        "groupId": "com.ss.android.lark.component",
         "artifactId": "core-component-api",
-        "groupId": "com.ss.android.lark.component",
-        "version": "2.0.0-release",
-        "componentType": 2
+        "version": "2.0.0-release"
       },
       {
-        "artifactId": "message-api",
+        "componentType": 2,
         "groupId": "com.ss.android.lark.component",
-        "version": "1.1.4-release",
-        "componentType": 2
+        "artifactId": "message-api",
+        "version": "1.1.4-release"
       }
     ]
   }
