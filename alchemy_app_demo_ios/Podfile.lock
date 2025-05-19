@@ -21,10 +21,10 @@ PODS:
     - LKKABridge
   - LKLoggerExternalIMP (0.0.1):
     - LKLoggerExternal (= 1.1.3)
-  - LKMenusExternal (1.1.2):
+  - LKMenusExternal (1.1.1):
     - LKKABridge
   - LKMenusExternalIMP (0.0.1):
-    - LKMenusExternal (= 1.1.2)
+    - LKMenusExternal (= 1.1.1)
     - LKMessageExternalIMP
     - LKNativeAppOpenApiExternalIMP
   - LKMessageExternal (1.1.3):
@@ -139,8 +139,8 @@ SPEC CHECKSUMS:
   LKLifecycleExternalIMP: 8562fa4943dd110ae7f84cf438f0755a2a99510f
   LKLoggerExternal: 773d926d7f4a8982584afedbc7d53c6e329df0d6
   LKLoggerExternalIMP: fc0913c20f6d143b5c051cb61e3e700b4faca3a6
-  LKMenusExternal: e1b0db930585d561a6da858f2a3af0c8dc916579
-  LKMenusExternalIMP: 281fbe5396b23a1f6b927b74ca7c084b1c4ef767
+  LKMenusExternal: 476d7e191665286f5649d52f51f9d270feab2413
+  LKMenusExternalIMP: de6b04b3bcc72864cd607914782c2590e0889107
   LKMessageExternal: 41b61cce454b24f325d15ac3b5648774a69c0f53
   LKMessageExternalIMP: 5c530db494e9e3e50a869fbbd1b874c1edf28a87
   LKNativeAppExtensionExternal: d925aafe350dbc64f18db2cb665005aa414a87a0
