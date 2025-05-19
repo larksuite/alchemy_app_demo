@@ -1,0 +1,50 @@
+name: Code Check
+
+trigger:
+  change:
+    branches: [ master, "release/**" ]
+    types: [ create, push, update ]
+
+jobs:
+  lint:
+    name: Swiftlint
+    runs-on:
+      macos: {}
+    steps:
+      - name: Install SwiftLint
+        commands:
+            - brew install swiftlint
+
+      - name: Run SwiftLint
+        commands:
+            - swiftlint --config alchemy_app_demo_ios/swiftlint.yml
+
+  format:
+    name: Swiftformat
+    runs-on:
+      macos: {}
+    steps:
+      - name: Install SwiftFormat
+        commands:
+            - brew install swiftformat
+
+      - name: Run SwiftFormat
+        commands:
+            - swiftformat --lint . --config alchemy_app_demo_ios/.swiftformat --swiftversion 5.9
+
+
+  detekt:
+    name: Detekt
+    image: hub.byted.org/codebase/ci_java11
+    steps:
+      - uses: actions/setup-proxy
+
+      - name: Install Detekt
+        commands:
+            - curl -sSLO https://github.com/detekt/detekt/releases/download/v1.23.8/detekt-cli-1.23.8.zip
+            - unzip detekt-cli-1.23.8.zip
+            - ./detekt-cli-1.23.8/bin/detekt-cli --help
+
+      - name: Run Detekt
+        commands:
+            - ./detekt-cli-1.23.8/bin/detekt-cli --base-path alchemy_app_demo_android --config alchemy_app_demo_android/detekt.yml
