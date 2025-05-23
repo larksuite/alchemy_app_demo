@@ -16,7 +16,7 @@ import com.google.gson.GsonBuilder
 
 class AlchemyVersionContainer {
     public static final String androidGradlePlugin = "4.1.0"
-    public static final String kotlinGradlePlugin = "1.5.32"
+    public static final String kotlinGradlePlugin = "1.7.21"
 
     public static final int compileSdkVersion = 31
     public static final String buildToolsVersion = "30.0.3"
