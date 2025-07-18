@@ -1,0 +1,43 @@
+{
+    "app": {
+        "signingConfigs": [],
+        "products": [
+            {
+                "name": "default",
+                "signingConfig": "default",
+                "compatibleSdkVersion": "5.0.1(13)",
+                "targetSdkVersion": "5.0.1(13)",
+                "compatibleSdkVersionStage": "beta3",
+                "runtimeOS": "HarmonyOS",
+                "buildOption": {
+                    "strictMode": {
+                        "caseSensitiveCheck": true,
+                        "useNormalizedOHMUrl": true
+                    }
+                }
+            }
+        ],
+        "buildModeSet": [
+            {
+                "name": "debug"
+            },
+            {
+                "name": "release"
+            }
+        ]
+    },
+    "modules": [
+        {
+            "name": "sample_app",
+            "srcPath": "./sample_app",
+            "targets": [
+                {
+                    "name": "default",
+                    "applyToProducts": [
+                        "default"
+                    ]
+                }
+            ]
+        }
+    ]
+}
