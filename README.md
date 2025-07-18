@@ -8,7 +8,7 @@ This project provides a Lark native app demo, demonstrating various scenarios wh
 
 ## Demo Code README
 
-[Android](alchemy_app_demo_android/README.md) | [iOS](alchemy_app_demo_ios/README.md)
+[Android](alchemy_app_demo_android/README.md) | [iOS](alchemy_app_demo_ios/README.md) | [HarmonyOS](alchemy_app_demo_harmony/README.md)
 
 ## License
 

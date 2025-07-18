@@ -1,0 +1,10 @@
+{
+  "hostVersion": "7.32",
+  "baselineId": "7522811126795485186",
+  "baselineVersion": "7.32.14",
+  "baselineCompatibleVersion": [
+    "7.32"
+  ],
+  "larkIntegrationVersion": "7.32.9",
+  "integrationMode": 2
+}
