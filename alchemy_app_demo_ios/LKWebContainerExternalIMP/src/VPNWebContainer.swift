@@ -21,8 +21,7 @@ import SnapKit
 /// An implementation of protocol `KAWebContainerProtocol`
 @objc public class VPNWebContainer: NSObject {
     /// Init method
-    override
-    public init() {
+    override public init() {
         super.init()
     }
 
