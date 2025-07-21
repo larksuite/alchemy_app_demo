@@ -8,7 +8,7 @@
 
 ## 示例代码说明
 
-[Android端](alchemy_app_demo_android/README.md) | [iOS端](alchemy_app_demo_ios/README.md)
+[Android端](alchemy_app_demo_android/README.md) | [iOS端](alchemy_app_demo_ios/README.md) | [HarmonyOS端](alchemy_app_demo_harmony/README.md)
 
 ## 开源协议
 

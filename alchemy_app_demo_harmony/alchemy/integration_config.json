@@ -1,0 +1,98 @@
+[
+  {
+    "integrationModuleName": "alchemy_app_demo_harmony",
+    "dependencies": [
+      {
+        "name": "alchemy_lifecycle_api",
+        "version": "1.0.0",
+        "type": 1,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_app_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_config_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_logger_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_passport_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_statistics_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_nativeapp_extension_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "ka_tab_api",
+        "version": "1.0.0",
+        "type": 1,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_nativelauncher_api",
+        "version": "1.0.0",
+        "type": 1,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_webcontainer_api",
+        "version": "1.0.0",
+        "type": 1,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_customapi_api",
+        "version": "1.0.0",
+        "type": 1,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_nativeapp_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_nativerouter_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_kvstorage_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      },
+      {
+        "name": "alchemy_webview_api",
+        "version": "1.0.0",
+        "type": 2,
+        "integrationType": 1
+      }
+    ],
+    "packageName": "alchemy_app_demo_harmony"
+  }
+]
